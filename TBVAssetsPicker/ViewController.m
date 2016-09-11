@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "TBVAssetsPickerController.h"
 
-@interface ViewController ()
+@interface ViewController () <TBVAssetsPickerControllerDelegate>
 
 @end
 
@@ -23,12 +23,19 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     TBVAssetsPickerController *vc = [[TBVAssetsPickerController alloc] init];
+    vc.delegate = self;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)assetsPickerController:(TBVAssetsPickerController *)picker overMaxSelectedCount:(NSInteger)selectedCount {
+    NSString *title = [NSString stringWithFormat:@"最多只能选择%@张", @(selectedCount)];
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:title
+                              message:nil
+                              delegate:nil
+                              cancelButtonTitle:nil
+                              otherButtonTitles:@"确定", nil];
+    [alertView show];
 }
 
 @end

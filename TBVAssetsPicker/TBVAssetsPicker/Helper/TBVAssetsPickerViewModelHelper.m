@@ -21,14 +21,14 @@
     viewModel.maxSeletedCount = picker.maxSelectedCount;
     
     [[[viewModel.didSelectCommand
-       executionSignals]
-      switchToLatest]
-     subscribeError:^(NSError *error) {
-        if ([picker.delegate respondsToSelector:@selector(assetsPickerController:overMaxSelectedCount:)]) {
-            [picker.delegate assetsPickerController:picker
-                               overMaxSelectedCount:picker.maxSelectedCount];
-        }
-    }];
+        executionSignals]
+        switchToLatest]
+        subscribeNext:^(id value) {
+            if (!value && [picker.delegate respondsToSelector:@selector(assetsPickerController:overMaxSelectedCount:)]) {
+                [picker.delegate assetsPickerController:picker
+                                   overMaxSelectedCount:picker.maxSelectedCount];
+            }
+        }];
 }
 
 + (TBVAssetsToolBarViewModel *)toolBarViewModelWithPicker:(TBVAssetsPickerController *)picker

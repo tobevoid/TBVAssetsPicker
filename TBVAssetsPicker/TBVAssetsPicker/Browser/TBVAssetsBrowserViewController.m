@@ -11,6 +11,7 @@
 #import "TBVAssetsPickerViewModelHelper.h"
 #import "TBVAssetsBrowserViewController.h"
 #import "TBVAssetsBrowserViewCell.h"
+#import "TBVAssetsPickerSelectButton.h"
 #import "TBVAssetsSendToolBar.h"
 #import "TBVAssetsBrowserViewModel.h"
 #import "TBVAssetsToolBarViewModel.h"
@@ -22,7 +23,7 @@ static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBr
 @interface TBVAssetsBrowserViewController () <UIGestureRecognizerDelegate>
 @property (strong, nonatomic) TBVAssetsBrowserViewModel *viewModel;
 @property (strong, nonatomic) TBVAssetsSendToolBar *toolBar;
-@property (strong, nonatomic) UIButton *selectedButton;
+@property (strong, nonatomic) TBVAssetsPickerSelectButton *selectedButton;
 @end
 
 @implementation TBVAssetsBrowserViewController
@@ -40,6 +41,15 @@ static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBr
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
                                               initWithCustomView:self.selectedButton];
+    @weakify(self)
+    [[self.selectedButton
+        rac_signalForControlEvents:UIControlEventTouchDown]
+        subscribeNext:^(id x) {
+            @strongify(self)
+            NSInteger currentIndex = [[self.collectionView indexPathsForVisibleItems].firstObject item];
+            TBVAsset *asset = self.viewModel.assets[currentIndex];
+            [[self.viewModel.dataSource[currentIndex] didSelectCommand] execute:asset];
+        }];
     [self setupCollectionView];
     [self.view addSubview:self.toolBar];
     [self layoutPageSubview];
@@ -64,24 +74,30 @@ static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBr
         [self.collectionView reloadData];
         /* http://stackoverflow.com/questions/14977896/xcode-collectionviewcontroller-scrolltoitematindexpath-not-working */
         /* ios8+ can scroll to right position, ios8- can not without 'layoutIfNeeded' */
-        [self.collectionView layoutIfNeeded];
+//        [self.collectionView layoutIfNeeded];
         
         NSInteger currentIndex = [self.viewModel.assets indexOfObject:self.viewModel.currentAsset];
         [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:currentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
-        [self changeSelectedButtonForAsset:self.viewModel.currentAsset];
     }];
+    
+    [[RACObserve(self, viewModel.currentAsset)
+        combineLatestWith:self.viewModel.selectedAssetsChangeSignal]
+        subscribeNext:^(id value) {
+            @strongify(self)
+            self.selectedButton.selectedIndex = [self.viewModel.selectedAssets indexOfObject:self.viewModel.currentAsset];
+        }];
     
     [self.toolBar bindViewModel:self.viewModel.toolBarViewModel];
     
     [[[[[NSNotificationCenter defaultCenter]
         rac_addObserverForName:TBVAssetsPickerAssetsDidChangeNotification
         object:nil]
-       takeUntil:self.rac_willDeallocSignal]
-      distinctUntilChanged]
-     subscribeNext:^(id x) {
-         @strongify(self)
-         /* refresh list */
-     }];
+        takeUntil:self.rac_willDeallocSignal]
+        distinctUntilChanged]
+        subscribeNext:^(id x) {
+            @strongify(self)
+            /* refresh list */
+        }];
 }
 
 - (void)layoutPageSubview {
@@ -134,32 +150,12 @@ static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBr
     return cell;
 }
 
+#pragma mark UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView
   didEndDisplayingCell:(nonnull UICollectionViewCell *)cell
     forItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     indexPath = [collectionView indexPathsForVisibleItems].firstObject;
-    TBVAsset *asset = self.viewModel.assets[indexPath.item];
-    [self changeSelectedButtonForAsset:asset];
-}
-#pragma mark event response
-
-- (void)selectedButtonOnClicked:(UIButton *)sender {
-    NSInteger currentIndex = [[self.collectionView indexPathsForVisibleItems].firstObject item];
-    TBVAsset *asset = self.viewModel.assets[currentIndex];
-    
-    [[self.viewModel.dataSource[currentIndex] didSelectCommand] execute:asset];
-    [self changeSelectedButtonForAsset:asset];
-}
-
-#pragma mark private method 
-- (void)changeSelectedButtonForAsset:(TBVAsset *)asset {
-    if ([self.viewModel.selectedAssets containsObject:asset]) {
-        self.selectedButton.backgroundColor = [UIColor orangeColor];
-        self.selectedButton.layer.borderWidth = 0;
-    } else {
-        self.selectedButton.backgroundColor = [UIColor clearColor];
-        self.selectedButton.layer.borderWidth = 1;
-    }
+    self.viewModel.currentAsset = self.viewModel.assets[indexPath.item];
 }
 
 #pragma mark set up
@@ -179,17 +175,11 @@ static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBr
 }
 
 #pragma mark getter setter
-- (UIButton *)selectedButton {
+- (TBVAssetsPickerSelectButton *)selectedButton {
     if (_selectedButton == nil) {
         CGSize selectedButtonSize = CGSizeMake(20, 20);
-        _selectedButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _selectedButton = [TBVAssetsPickerSelectButton selectButton];
         _selectedButton.bounds = CGRectMake(0, 0, selectedButtonSize.width, selectedButtonSize.height);
-        _selectedButton.layer.cornerRadius = selectedButtonSize.width * 0.5;
-        _selectedButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
-        _selectedButton.titleLabel.font = [UIFont systemFontOfSize:20];
-        [_selectedButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_selectedButton setTitle:@"✓" forState:UIControlStateNormal];
-        [_selectedButton addTarget:self action:@selector(selectedButtonOnClicked:) forControlEvents:UIControlEventTouchDown];
     }
     return _selectedButton;
 }

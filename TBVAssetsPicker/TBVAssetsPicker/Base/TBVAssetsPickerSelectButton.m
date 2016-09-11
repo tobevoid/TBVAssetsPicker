@@ -23,6 +23,7 @@
         [self setImage:[UIImage imageNamed:@"asset_picker_not_selected"] forState:UIControlStateNormal];
         [self setImage:[UIImage new] forState:UIControlStateSelected];
         [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        self.adjustsImageWhenHighlighted = NO;
     }
     return self;
 }

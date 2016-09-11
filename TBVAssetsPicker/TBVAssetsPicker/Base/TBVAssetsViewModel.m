@@ -28,9 +28,7 @@
                 [self removeSelectedAsset:input];
             } else {
                 if (self.selectedAssets.count == self.maxSeletedCount) {
-                    return [RACSignal error:[NSError errorWithDomain:@"TPCAssetPicker"
-                                                                code:-1
-                                                            userInfo:@{@"reason" : @"over max selected count"}]];
+                    return [RACSignal return:nil];
                 }
                 [self addSelectedAsset:input];
             }
