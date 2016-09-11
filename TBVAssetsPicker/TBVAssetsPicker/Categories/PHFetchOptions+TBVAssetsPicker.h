@@ -9,7 +9,7 @@
 #import <Photos/Photos.h>
 #import "TBVAssetsPickerTypes.h"
 
-@interface PHFetchOptions (TBVAssetPicker)
+@interface PHFetchOptions (TBVAssetsPicker)
 + (instancetype)tbv_fetchOptionsWithCustomMediaType:(TBVAssetsPickerMediaType)mediaType;
 + (NSArray <NSNumber *> *)tbv_mediaTypesWithCustonMediaType:(TBVAssetsPickerMediaType)mediaType;
 @end

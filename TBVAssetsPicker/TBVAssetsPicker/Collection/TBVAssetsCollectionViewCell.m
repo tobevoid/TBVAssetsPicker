@@ -6,7 +6,6 @@
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
 #import <Masonry/Masonry.h>
-#import "NSObject+TBVAssetsPicker.h"
 #import "TBVAssetsCollectionViewCell.h"
 #import "TBVAssetsCollectionItemViewModel.h"
 #import "TBVCollection.h"

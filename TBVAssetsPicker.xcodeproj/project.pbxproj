@@ -26,7 +26,6 @@
 		D6852A8C1D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A391D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m */; };
 		D6852A8D1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A3C1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m */; };
 		D6852A8E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A3E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m */; };
-		D6852A8F1D84DD7B00359C9E /* NSObject+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A401D84DD7B00359C9E /* NSObject+TBVAssetsPicker.m */; };
 		D6852A901D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A421D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m */; };
 		D6852A911D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A441D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.m */; };
 		D6852A921D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A461D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.m */; };
@@ -116,8 +115,6 @@
 		D6852A3C1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsFilter+TBVAssetsPicker.m"; sourceTree = "<group>"; };
 		D6852A3D1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+TBVAssetsPicker.h"; sourceTree = "<group>"; };
 		D6852A3E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+TBVAssetsPicker.m"; sourceTree = "<group>"; };
-		D6852A3F1D84DD7B00359C9E /* NSObject+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TBVAssetsPicker.h"; sourceTree = "<group>"; };
-		D6852A401D84DD7B00359C9E /* NSObject+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TBVAssetsPicker.m"; sourceTree = "<group>"; };
 		D6852A411D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAssetCollection+TBVAssetsPicker.h"; sourceTree = "<group>"; };
 		D6852A421D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAssetCollection+TBVAssetsPicker.m"; sourceTree = "<group>"; };
 		D6852A431D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHFetchOptions+TBVAssetsPicker.h"; sourceTree = "<group>"; };
@@ -339,8 +336,6 @@
 				D6852A3C1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m */,
 				D6852A3D1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.h */,
 				D6852A3E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m */,
-				D6852A3F1D84DD7B00359C9E /* NSObject+TBVAssetsPicker.h */,
-				D6852A401D84DD7B00359C9E /* NSObject+TBVAssetsPicker.m */,
 				D6852A411D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.h */,
 				D6852A421D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m */,
 				D6852A431D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.h */,
@@ -671,7 +666,6 @@
 				D6852A901D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m in Sources */,
 				D6852A8D1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m in Sources */,
 				D6852A971D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.m in Sources */,
-				D6852A8F1D84DD7B00359C9E /* NSObject+TBVAssetsPicker.m in Sources */,
 				D6852A9F1D84DD7B00359C9E /* TBVAssetsGridItemViewModel.m in Sources */,
 				D6852A8E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m in Sources */,
 				D6852A861D84DD7B00359C9E /* TBVAssetsPickerSelectButton.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "PHFetchOptions+TBVAssetsPicker.h"
 
-@implementation PHFetchOptions (TBVAssetPicker)
+@implementation PHFetchOptions (TBVAssetsPicker)
 + (instancetype)tbv_fetchOptionsWithCustomMediaType:(TBVAssetsPickerMediaType)mediaType {
     NSArray *mediaTypes = [self tbv_mediaTypesWithCustonMediaType:mediaType];
     if (!mediaTypes.count) return nil;

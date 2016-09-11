@@ -17,5 +17,9 @@
 @property (strong, nonatomic) NSObject  *collection;
 
 + (instancetype)collectionWithOriginCollection:(NSObject *)aCollection;
+- (NSString *)collectionTitle;
+- (NSInteger)collectionEstimatedAssetCount;
+- (NSInteger)collectionAccurateAssetCountWithFetchOptions:(id)filterOptions;
+- (NSInteger)collectionAccurateAssetCountWithMediaType:(TBVAssetsPickerMediaType)mediaType;
 @end
 

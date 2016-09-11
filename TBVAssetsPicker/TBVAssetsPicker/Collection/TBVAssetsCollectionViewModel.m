@@ -5,7 +5,6 @@
 //  Created by tripleCC on 8/25/16.
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
-#import "NSObject+TBVAssetsPicker.h"
 #import "TBVAssetsPickerController+PickerManager.h"
 #import "TBVAssetsCollectionViewModel.h"
 #import "TBVAssetsCollectionItemViewModel.h"
@@ -27,7 +26,7 @@
                  }];
                  if (!picker.showsEmptyAlbums) {
                      dataSource = [dataSource filter:^BOOL(TBVAssetsCollectionItemViewModel *value) {
-                         return [value.collection.collection tbv_collectionAccurateAssetCountWithMediaType:picker.mediaType] > 0;
+                         return [value.collection collectionAccurateAssetCountWithMediaType:picker.mediaType] > 0;
                      }];
                  }
                  return dataSource.array;

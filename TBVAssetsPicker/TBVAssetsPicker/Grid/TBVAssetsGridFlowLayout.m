@@ -25,7 +25,7 @@ static const CGFloat kBQDefaultFlowLayoutColumn = 4;
         self.minimumInteritemSpacing = kBQDefaultFlowLayoutMargin;
         self.sectionInset = UIEdgeInsetsMake(kBQDefaultFlowLayoutMargin,
                                              kBQDefaultFlowLayoutMargin,
-                                             kBQDefaultFlowLayoutMargin + kTBVAssetPickerToolBarHeight,
+                                             kBQDefaultFlowLayoutMargin + kTBVAssetsPickerToolBarHeight,
                                              kBQDefaultFlowLayoutMargin);
     }
     return self;

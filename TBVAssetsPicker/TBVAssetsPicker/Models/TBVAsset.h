@@ -15,4 +15,6 @@
 @property (strong, nonatomic) NSObject  *asset;
 
 + (instancetype)assetWithOriginAsset:(NSObject *)asset;
+- (NSString *)assetLocalIdentifer;
+- (CGSize)assetPixelSize;
 @end

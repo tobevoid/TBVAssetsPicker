@@ -10,9 +10,9 @@
 #import "TBVAssetsPickerManager.h"
 #import "TBVAssetsManagerProtocol.h"
 #import "TBVCachingImageManager.h"
-#import "NSObject+TBVAssetsPicker.h"
 #import "TBVAssetsLibrary.h"
 #import "TBVCollection.h"
+
 
 @interface TBVAssetsPickerManager() 
 @property (strong, nonatomic) NSObject<TBVAssetsManagerProtocol> *realManager;

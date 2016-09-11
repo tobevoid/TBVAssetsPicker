@@ -8,7 +8,6 @@
 
 #import "TBVAssetsCollectionItemViewModel.h"
 #import "TBVAssetsPickerController+PickerManager.h"
-#import "NSObject+TBVAssetsPicker.h"
 #import "TBVCollection.h"
 
 @interface TBVAssetsCollectionItemViewModel()
@@ -25,8 +24,8 @@
         self.posterImageSignal = [picker.pickerManager requestPosterImageForCollection:collection
                                                                              mediaType:picker.mediaType];
         self.title = [NSString stringWithFormat:@"%@ (%@)",
-                      collection.collection.tbv_collectionTitle,
-                      @([collection.collection tbv_collectionAccurateAssetCountWithMediaType:picker.mediaType])];
+                      collection.collectionTitle,
+                      @([collection collectionAccurateAssetCountWithMediaType:picker.mediaType])];
     }
     return self;
 }

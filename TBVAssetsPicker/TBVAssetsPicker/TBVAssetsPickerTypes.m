@@ -10,7 +10,7 @@
 
 const CGFloat kBQPosterImageWidth = 70;
 const CGFloat kBQPosterImageHeight = kBQPosterImageWidth;
-const CGFloat kTBVAssetPickerToolBarHeight = 50;
+const CGFloat kTBVAssetsPickerToolBarHeight = 50;
 
 const CGFloat kBQBrowserImageScaleForScreenBounds = 2;
 

@@ -5,7 +5,6 @@
 //  Created by tripleCC on 8/25/16.
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
-#import "NSObject+TBVAssetsPicker.h"
 #import "TBVAssetsPickerManager.h"
 #import "TBVAssetsPickerController.h"
 #import "TBVAssetsGridViewModel.h"
@@ -97,7 +96,7 @@
 }
 
 - (NSString *)title {
-    return [self.collection.collection tbv_collectionTitle];
+    return [self.collection collectionTitle];
 }
 
 - (NSString *)backTitle {

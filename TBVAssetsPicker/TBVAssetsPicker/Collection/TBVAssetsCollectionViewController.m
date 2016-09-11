@@ -7,17 +7,16 @@
 //
 
 #import "UIViewController+TBVAssetsPicker.h"
-#import "NSObject+TBVAssetsPicker.h"
 #import "TBVAssetsPickerController+PickerManager.h"
 #import "TBVAssetsPickerManager+Authorization.h"
 #import "TBVAssetsPickerManager.h"
 #import "TBVAssetsCollectionViewController.h"
 #import "TBVAssetsGridViewController.h"
 #import "TBVAssetsCollectionViewCell.h"
-#import "TBVCollection.h"
 #import "TBVAssetsGridViewModel.h"
 #import "TBVAssetsCollectionViewModel.h"
 #import "TBVAssetsCollectionItemViewModel.h"
+#import "TBVCollection.h"
 
 static const CGFloat kTBVAssetsCollectionViewCellHeight = 90.0f;
 static NSString *const kTBVAssetsCollectionViewCellReuseIdentifier = @"kTBVAssetsCollectionViewCell";

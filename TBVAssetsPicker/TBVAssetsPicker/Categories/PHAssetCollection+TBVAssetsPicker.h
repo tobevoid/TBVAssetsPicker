@@ -1,5 +1,5 @@
 //
-//  PHAssetCollection+TBVAssetPicker.h
+//  PHAssetCollection+TBVAssetsPicker.h
 //  PhotoBrowser
 //
 //  Created by tripleCC on 8/24/16.
@@ -8,6 +8,6 @@
 
 #import <Photos/Photos.h>
 
-@interface PHAssetCollection (TBVAssetPicker)
+@interface PHAssetCollection (TBVAssetsPicker)
 - (NSUInteger)tbv_countOfAssetsFetchedWithOptions:(PHFetchOptions *)fetchOptions;
 @end

@@ -103,7 +103,7 @@ static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBr
 - (void)layoutPageSubview {
     [self.toolBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
-        make.height.equalTo(@(kTBVAssetPickerToolBarHeight));
+        make.height.equalTo(@(kTBVAssetsPickerToolBarHeight));
     }];
 }
 

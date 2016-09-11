@@ -15,10 +15,10 @@ typedef NS_ENUM(NSInteger, TBVAssetsPickerMediaType) {
     TBVAssetsPickerMediaTypeAll,
 };
 
-typedef NS_ENUM(NSInteger, TBVAssetPickerDefinitionType) {
-    TBVAssetPickerDefinitionTypeThumbnail = 0,
-    TBVAssetPickerDefinitionTypeFullScreen,
-    TBVAssetPickerDefinitionTypeFullResolution,
+typedef NS_ENUM(NSInteger, TBVAssetsPickerDefinitionType) {
+    TBVAssetsPickerDefinitionTypeThumbnail = 0,
+    TBVAssetsPickerDefinitionTypeFullScreen,
+    TBVAssetsPickerDefinitionTypeFullResolution,
 };
 
 typedef NS_ENUM(NSInteger, BQAuthorizationStatus) {
@@ -41,7 +41,7 @@ CF_EXPORT NSString * const  kBQAssertsPickerMediaTypeKey;
 /* constaint */
 CF_EXPORT const CGFloat     kBQPosterImageWidth;
 CF_EXPORT const CGFloat     kBQPosterImageHeight;
-CF_EXPORT const CGFloat     kTBVAssetPickerToolBarHeight;
+CF_EXPORT const CGFloat     kTBVAssetsPickerToolBarHeight;
 
 CF_EXPORT const CGFloat     kBQBrowserImageScaleForScreenBounds;
 
