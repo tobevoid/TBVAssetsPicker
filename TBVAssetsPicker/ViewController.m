@@ -38,4 +38,7 @@
     [alertView show];
 }
 
+- (void)assetsPickerController:(TBVAssetsPickerController *)picker didFinishPickingAssets:(NSArray<TBVAsset *> *)assets {
+    
+}
 @end
