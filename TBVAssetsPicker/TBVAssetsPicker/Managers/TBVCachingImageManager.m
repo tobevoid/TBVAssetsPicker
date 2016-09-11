@@ -1,5 +1,5 @@
 //
-//  BQCachingImageManager.m
+//  TBVCachingImageManager.m
 //  PhotoBrowser
 //
 //  Created by tripleCC on 8/24/16.
@@ -13,12 +13,12 @@
 #import "TBVAsset.h"
 #import "TBVCollection.h"
 
-@interface BQCachingImageManager() <PHPhotoLibraryChangeObserver>
+@interface TBVCachingImageManager() <PHPhotoLibraryChangeObserver>
 @property (strong, nonatomic) PHCachingImageManager *imageManager;
 @property (strong, nonatomic, readonly) PHImageRequestOptions *defaultImageRequestOptions;
 @end
 
-@implementation BQCachingImageManager
+@implementation TBVCachingImageManager
 #pragma mark life cycle
 - (instancetype)init {
     if (self = [super init]) {
@@ -130,7 +130,7 @@
                 }];
             }];
         }];
-    
+
     return [[RACSignal
         zip:requestSequence]
         map:^id(RACTuple *value) {
@@ -213,15 +213,6 @@
         return nil;
     }];
 }
-//- (id)requestVideoForAsset:(TBVAsset *)asset
-//             resultHandler:(void (^)(AVPlayerItem *))resultHandler {
-//    
-//}
-//
-//- (id)requestURLAssetForAsset:(TBVAsset *)asset
-//                resultHandler:(void (^)(AVURLAsset *))resultHandler {
-//    
-//}
 
 - (PHImageContentMode)contentModeForCustomContentMode:(TBVAssetsPickerContentMode)contentMode {
     switch (contentMode) {

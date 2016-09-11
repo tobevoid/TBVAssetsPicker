@@ -1,5 +1,5 @@
 //
-//  BQCachingImageManager.h
+//  TBVCachingImageManager.h
 //  PhotoBrowser
 //
 //  Created by tripleCC on 8/24/16.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "TBVAssetsManagerProtocol.h"
 
-@interface BQCachingImageManager : NSObject <TBVAssetsManagerProtocol>
+@interface TBVCachingImageManager : NSObject <TBVAssetsManagerProtocol>
 
 @end

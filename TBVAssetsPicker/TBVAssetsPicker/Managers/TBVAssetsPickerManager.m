@@ -108,7 +108,7 @@
 {
     if (_realManager == nil) {
         if (self.photoKitAvailable) {
-            _realManager = [[BQCachingImageManager alloc] init];
+            _realManager = [[TBVCachingImageManager alloc] init];
         } else {
             _realManager = [[TBVAssetsLibrary alloc] init];
         }

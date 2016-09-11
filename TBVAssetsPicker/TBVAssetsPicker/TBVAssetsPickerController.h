@@ -11,7 +11,9 @@
 #import "TBVAsset.h"
 #import "TBVAssetsPickerTypes.h"
 
-@class TBVAssetsPickerController, TBVAsset;
+@class TBVAsset;
+@class TBVAssetsPickerManager;
+@class TBVAssetsPickerController;
 @protocol TBVAssetsPickerControllerDataSource <NSObject>
 @optional
 - (UINavigationController *)assetsPickerController:(TBVAssetsPickerController *)picker
@@ -39,4 +41,5 @@
 @property (assign, nonatomic) BOOL showsEmptyAlbums;
 @property (assign, nonatomic) TBVAssetsPickerMediaType mediaType;
 @property (assign, nonatomic) BOOL shouldScrollToBottom;
+@property (strong, nonatomic) TBVAssetsPickerManager *pickerManager;
 @end

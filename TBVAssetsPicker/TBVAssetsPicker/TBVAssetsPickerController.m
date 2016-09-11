@@ -15,7 +15,7 @@
 #import "TBVAssetsGridViewModel.h"
 
 @interface TBVAssetsPickerController ()
-@property (strong, nonatomic) TBVAssetsPickerManager *pickerManager;
+
 @end
 
 @implementation TBVAssetsPickerController

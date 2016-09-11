@@ -45,11 +45,11 @@
         CGImageRef resultImageRef = nil;
         
         BOOL degraded = NO;
-        if (targetSize.width < CGImageGetWidth(asset.thumbnail) &&
-            targetSize.height < CGImageGetHeight(asset.thumbnail)) {
+        CGImageRef thumbnail = asset.thumbnail;
+        if (targetSize.width < CGImageGetWidth(thumbnail) &&
+            targetSize.height < CGImageGetHeight(thumbnail)) {
             // TBVAssetsPickerContentModeFill
-            resultImageRef = asset.thumbnail;
-            degraded = YES;
+            resultImageRef = thumbnail;
         }
         if (!resultImageRef) {
             CGImageRef aspectRatioThumbnail = asset.aspectRatioThumbnail;
