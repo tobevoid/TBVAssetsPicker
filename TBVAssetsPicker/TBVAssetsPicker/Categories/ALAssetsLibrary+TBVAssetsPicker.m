@@ -45,9 +45,5 @@
         return nil;
     }] deliverOnMainThread];
 }
-
-- (RACSignal *)a {
-    return [[[NSNotificationCenter defaultCenter] rac_addObserverForName:ALAssetsLibraryChangedNotification object:nil] rac_willDeallocSignal];
-}
 @end
 #pragma clang diagnostic pop
