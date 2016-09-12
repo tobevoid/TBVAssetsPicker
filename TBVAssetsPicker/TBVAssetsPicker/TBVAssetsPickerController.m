@@ -8,6 +8,7 @@
 #import <Masonry/Masonry.h>
 #import "TBVAssetsPickerController.h"
 #import "TBVAssetsPickerManager+Authorization.h"
+#import "TBVLogger.h"
 #import "TBVAssetsCollectionViewController.h"
 #import "TBVAssetsPickerAccessDeniedViewController.h"
 #import "TBVAssetsGridViewController.h"
@@ -15,26 +16,27 @@
 #import "TBVAssetsGridViewModel.h"
 
 @interface TBVAssetsPickerController ()
-
+@property (weak, nonatomic) TBVAssetsPickerManager *pickerManager;
 @end
 
 @implementation TBVAssetsPickerController
-- (instancetype)init {
-    if (self = [super init]) {
+#pragma mark life cycle
+- (instancetype)initWithPickManager:(TBVAssetsPickerManager *)manager {
+    if (self = [self init]) {
+        _pickerManager = manager;
         _maxSelectedCount = 9;
         _shouldScrollToBottom = YES;
     }
     return self;
 }
 
-#pragma mark life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[[[NSNotificationCenter defaultCenter]
         rac_addObserverForName:TBVAssetsPickerAssetsDidChangeNotification object:nil]
         takeUntil:self.rac_willDeallocSignal]
         subscribeNext:^(id x) {
-            NSLog(@"assets did change: %@", x);
+            TBVLogInfo(@"assets did change: %@", x);
         }];
     
     @weakify(self)
@@ -42,7 +44,7 @@
     /* 如果应用在后台时，更改了权限，当切回前台后，App会重新启动 */
 //    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIApplicationWillEnterForegroundNotification object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
 //        @strongify(self)
-//        NSLog(@"authorization did change to: %@", BQAuthorizationStatusStringsMap[@([self.pickerManager authorizationStatus])]);
+//        TBVLogInfo(@"authorization did change to: %@", BQAuthorizationStatusStringsMap[@([self.pickerManager authorizationStatus])]);
 //        
 //    }];
     
@@ -54,7 +56,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"%@ is being released", self);
+    TBVLogInfo(@"%@ is being released", self);
 }
 
 #pragma mark private method

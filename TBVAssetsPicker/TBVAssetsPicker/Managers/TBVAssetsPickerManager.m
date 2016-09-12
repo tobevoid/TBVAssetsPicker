@@ -7,6 +7,7 @@
 //
 #import <Photos/Photos.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "TBVLogger.h"
 #import "TBVAssetsPickerManager.h"
 #import "TBVAssetsManagerProtocol.h"
 #import "TBVCachingImageManager.h"
@@ -40,7 +41,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"%@ is being released", self);
+    TBVLogInfo(@"%@ is being released", self);
 }
 
 #pragma mark TBVAssetsManagerProtocol

@@ -9,6 +9,7 @@
 #import "UIViewController+TBVAssetsPicker.h"
 #import "TBVAssetsPickerController+PickerManager.h"
 #import "TBVAssetsPickerManager+Authorization.h"
+#import "TBVLogger.h"
 #import "TBVAssetsPickerManager.h"
 #import "TBVAssetsCollectionViewController.h"
 #import "TBVAssetsGridViewController.h"
@@ -69,7 +70,7 @@ static NSString *const kTBVAssetsCollectionViewCellReuseIdentifier = @"kTBVAsset
 }
 
 - (void)dealloc {
-    NSLog(@"%@ is being released", self);
+    TBVLogInfo(@"%@ is being released", self);
 }
 
 #pragma mark - UITableViewDataSource

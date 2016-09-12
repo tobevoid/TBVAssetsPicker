@@ -8,6 +8,7 @@
 #import <Masonry/Masonry.h>
 #import "UIViewController+TBVAssetsPicker.h"
 #import "TBVAssetsPickerController+PickerManager.h"
+#import "TBVLogger.h"
 #import "TBVAssetsPickerViewModelHelper.h"
 #import "TBVAssetsPickerTypes.h"
 #import "TBVAssetsGridFlowLayout.h"
@@ -118,7 +119,7 @@ static NSString *const kTBVAssetsGridViewCellReuseIdentifier = @"kTBVAssetsGridV
 }
 
 - (void)dealloc {
-    NSLog(@"%@ is being released", self);
+    TBVLogInfo(@"%@ is being released", self);
 }
 
 #pragma mark <UICollectionViewDataSource>

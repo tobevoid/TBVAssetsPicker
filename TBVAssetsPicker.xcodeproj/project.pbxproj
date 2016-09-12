@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C6F5488D3565ED5DD1E2480 /* libPods-TBVAssetsPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8294FB311E9EE7100775198C /* libPods-TBVAssetsPicker.a */; };
+		D6377AD21D8678FA005C3DA6 /* TBVAssetsReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6377AD11D8678FA005C3DA6 /* TBVAssetsReformer.m */; };
+		D6377AD61D867D99005C3DA6 /* TBVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D6377AD51D867D99005C3DA6 /* TBVLogger.m */; };
 		D68529F61D84DD2700359C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F51D84DD2700359C9E /* main.m */; };
 		D68529F91D84DD2700359C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F81D84DD2700359C9E /* AppDelegate.m */; };
 		D68529FC1D84DD2700359C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529FB1D84DD2700359C9E /* ViewController.m */; };
@@ -56,6 +57,7 @@
 		D6852AAB1D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A801D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m */; };
 		D6852AAC1D84DD7B00359C9E /* TBVAssetsSendToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A821D84DD7B00359C9E /* TBVAssetsSendToolBar.m */; };
 		D6852AAD1D84DD7B00359C9E /* TBVAssetsToolBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A841D84DD7B00359C9E /* TBVAssetsToolBarViewModel.m */; };
+		F523B4852A5124109AF5905A /* libPods-TBVAssetsPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC3D66F0B099F6D7410A72 /* libPods-TBVAssetsPicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +79,12 @@
 
 /* Begin PBXFileReference section */
 		41B99AF05E51E70262C050E4 /* Pods-TBVAssetsPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVAssetsPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBVAssetsPicker/Pods-TBVAssetsPicker.release.xcconfig"; sourceTree = "<group>"; };
-		8294FB311E9EE7100775198C /* libPods-TBVAssetsPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBVAssetsPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92EC3D66F0B099F6D7410A72 /* libPods-TBVAssetsPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBVAssetsPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC365BD102809CAFEE2702 /* Pods-TBVAssetsPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVAssetsPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBVAssetsPicker/Pods-TBVAssetsPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		D6377AD01D8678FA005C3DA6 /* TBVAssetsReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsReformer.h; sourceTree = "<group>"; };
+		D6377AD11D8678FA005C3DA6 /* TBVAssetsReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsReformer.m; sourceTree = "<group>"; };
+		D6377AD41D867D99005C3DA6 /* TBVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVLogger.h; sourceTree = "<group>"; };
+		D6377AD51D867D99005C3DA6 /* TBVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVLogger.m; sourceTree = "<group>"; };
 		D68529F11D84DD2700359C9E /* TBVAssetsPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVAssetsPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68529F51D84DD2700359C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D68529F71D84DD2700359C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,7 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6F5488D3565ED5DD1E2480 /* libPods-TBVAssetsPicker.a in Frameworks */,
+				F523B4852A5124109AF5905A /* libPods-TBVAssetsPicker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +219,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D6377ACF1D8678EB005C3DA6 /* TBVAssetsReformer */ = {
+			isa = PBXGroup;
+			children = (
+				D6377AD01D8678FA005C3DA6 /* TBVAssetsReformer.h */,
+				D6377AD11D8678FA005C3DA6 /* TBVAssetsReformer.m */,
+			);
+			path = TBVAssetsReformer;
+			sourceTree = "<group>";
+		};
+		D6377AD31D867D99005C3DA6 /* TBVLogger */ = {
+			isa = PBXGroup;
+			children = (
+				D6377AD41D867D99005C3DA6 /* TBVLogger.h */,
+				D6377AD51D867D99005C3DA6 /* TBVLogger.m */,
+			);
+			path = TBVLogger;
+			sourceTree = "<group>";
+		};
 		D68529E81D84DD2700359C9E = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +262,8 @@
 		D68529F31D84DD2700359C9E /* TBVAssetsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				D6377AD31D867D99005C3DA6 /* TBVLogger */,
+				D6377ACF1D8678EB005C3DA6 /* TBVAssetsReformer */,
 				D6852A271D84DD7B00359C9E /* TBVAssetsPicker */,
 				D68529F71D84DD2700359C9E /* AppDelegate.h */,
 				D68529F81D84DD2700359C9E /* AppDelegate.m */,
@@ -449,7 +475,7 @@
 		DAD084B1B874B584F960AB17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8294FB311E9EE7100775198C /* libPods-TBVAssetsPicker.a */,
+				92EC3D66F0B099F6D7410A72 /* libPods-TBVAssetsPicker.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -643,6 +669,7 @@
 				D6852A941D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.m in Sources */,
 				D6852A9A1D84DD7B00359C9E /* TBVAssetsCollectionViewCell.m in Sources */,
 				D6852A891D84DD7B00359C9E /* TBVAssetsBrowserItemViewModel.m in Sources */,
+				D6377AD61D867D99005C3DA6 /* TBVLogger.m in Sources */,
 				D6852AA51D84DD7B00359C9E /* TBVAssetsPickerManager.m in Sources */,
 				D68529FC1D84DD2700359C9E /* ViewController.m in Sources */,
 				D6852AAA1D84DD7B00359C9E /* TBVAssetsPickerTypes.m in Sources */,
@@ -662,6 +689,7 @@
 				D6852A8C1D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m in Sources */,
 				D6852A931D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.m in Sources */,
 				D68529F91D84DD2700359C9E /* AppDelegate.m in Sources */,
+				D6377AD21D8678FA005C3DA6 /* TBVAssetsReformer.m in Sources */,
 				D6852AA71D84DD7B00359C9E /* TBVAsset.m in Sources */,
 				D6852A901D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m in Sources */,
 				D6852A8D1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m in Sources */,

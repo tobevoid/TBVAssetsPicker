@@ -34,6 +34,8 @@
 @end
 
 @interface TBVAssetsPickerController : UIViewController
+- (instancetype)initWithPickManager:(TBVAssetsPickerManager *)manager;
+
 @property (weak, nonatomic) id<TBVAssetsPickerControllerDelegate> delegate;
 @property (weak, nonatomic) id<TBVAssetsPickerControllerDataSource> dataSource;
 @property (nonatomic, strong) NSArray <TBVAsset *> *selectedAssets;
@@ -41,5 +43,4 @@
 @property (assign, nonatomic) BOOL showsEmptyAlbums;
 @property (assign, nonatomic) TBVAssetsPickerMediaType mediaType;
 @property (assign, nonatomic) BOOL shouldScrollToBottom;
-@property (strong, nonatomic) TBVAssetsPickerManager *pickerManager;
 @end

@@ -8,6 +8,8 @@
 #import <Masonry/Masonry.h>
 #import "TBVAssetsPickerController+PickerManager.h"
 #import "UIViewController+TBVAssetsPicker.h"
+#import "TBVAssetsPickerTypes.h"
+#import "TBVLogger.h"
 #import "TBVAssetsPickerViewModelHelper.h"
 #import "TBVAssetsBrowserViewController.h"
 #import "TBVAssetsBrowserViewCell.h"
@@ -17,7 +19,6 @@
 #import "TBVAssetsToolBarViewModel.h"
 #import "TBVAssetsBrowserItemViewModel.h"
 #import "TBVAssetsBrowserFlowLayout.h"
-#import "TBVAssetsPickerTypes.h"
 
 static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBrowserViewCell";
 @interface TBVAssetsBrowserViewController () <UIGestureRecognizerDelegate>
@@ -127,7 +128,7 @@ static NSString *const kTBVAssetsBrowserViewCellReuseIdentifier = @"kTBVAssetsBr
 }
 
 - (void)dealloc {
-    NSLog(@"%@ is being released", self);
+    TBVLogInfo(@"%@ is being released", self);
 }
 #pragma mark UIGestureRecognizerDelegate
 

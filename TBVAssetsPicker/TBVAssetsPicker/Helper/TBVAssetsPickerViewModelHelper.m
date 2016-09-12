@@ -1,7 +1,7 @@
 
 //
 //  TBVAssetsPickerViewModelHelper.m
-//  TPCAssetPickerController
+//  TBVAssetPickerController
 //
 //  Created by tripleCC on 9/9/16.
 //  Copyright © 2016 tripleCC. All rights reserved.
