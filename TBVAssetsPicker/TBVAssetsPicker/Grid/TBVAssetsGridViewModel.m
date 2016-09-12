@@ -28,33 +28,31 @@
         self.requestDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             @strongify(self)
             return [[[picker requestAssetsForCollection:collection mediaType:mediaType]
-                     filter:^BOOL(NSArray *value) {
-                         return value.count > 0;
-                     }]
-                    map:^id(NSArray *value) {
-                        @strongify(self)
-                        self.assets = value;
-                        
-                        return [value.rac_sequence
-                                map:^id(TBVAsset *value) {
-                                    TBVAssetsGridItemViewModel *viewModel = [[TBVAssetsGridItemViewModel alloc]
-                                                                            initWithAsset:value
-                                                                            picker:picker];
-                                    return viewModel;
-                                }].array;
-                    }];
+                filter:^BOOL(NSArray *value) {
+                    return value.count > 0;
+                }]
+                map:^id(NSArray *value) {
+                    @strongify(self)
+                    self.assets = value;
+                    
+                    return [value.rac_sequence
+                            map:^id(TBVAsset *value) {
+                                TBVAssetsGridItemViewModel *viewModel = [[TBVAssetsGridItemViewModel alloc]
+                                                                         initWithAsset:value
+                                                                         picker:picker];
+                                return viewModel;
+                            }].array;
+                }];
         }];
         
         RAC(self, dataSource) = [self.requestDataCommand executionSignals].switchToLatest;
         [self.requestDataCommand execute:nil];
-        
         
         self.dataSourceChangeSignal = [self.dataSourceChangeSignal doNext:^(NSArray *dataSource) {
             @strongify(self)
             for (TBVAssetsItemViewModel *viewModel in dataSource) {
                 viewModel.didSelectCommand = self.didSelectCommand;
             }
-
         }];
         
         self.willBackFromBrowserCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id selectedAssets) {
@@ -78,21 +76,21 @@
                                     mediaType:(TBVAssetsPickerMediaType)mediaType {
     @weakify(self)
     return [[[picker requestAssetsForCollection:collection mediaType:mediaType]
-             filter:^BOOL(NSArray *value) {
-                 return value.count > 0;
-             }]
-            map:^id(NSArray *value) {
-                @strongify(self)
-                self.assets = value;
-                
-                return [value.rac_sequence
-                        map:^id(TBVAsset *value) {
-                            TBVAssetsGridItemViewModel *viewModel = [[TBVAssetsGridItemViewModel alloc]
-                                                                    initWithAsset:value
-                                                                    picker:picker];
-                            return viewModel;
-                        }].array;
-            }];
+        filter:^BOOL(NSArray *value) {
+            return value.count > 0;
+        }]
+        map:^id(NSArray *value) {
+            @strongify(self)
+            self.assets = value;
+            
+            return [value.rac_sequence
+                map:^id(TBVAsset *value) {
+                    TBVAssetsGridItemViewModel *viewModel = [[TBVAssetsGridItemViewModel alloc]
+                                                             initWithAsset:value
+                                                             picker:picker];
+                    return viewModel;
+                }].array;
+        }];
 }
 
 - (NSString *)title {

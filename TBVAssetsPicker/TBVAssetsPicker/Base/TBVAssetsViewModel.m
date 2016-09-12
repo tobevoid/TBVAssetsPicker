@@ -43,17 +43,17 @@
         
         /* tool bar */
         self.selectedAssetsChangeSignal = [[RACObserve(self, selectedAssetsCount)
-                                            merge:RACObserve(self, selectedAssets)]
-                                           map:^id(id value) {
-            @strongify(self)
-            return self.selectedAssets;
-        }];
+            merge:RACObserve(self, selectedAssets)]
+            map:^id(id value) {
+                @strongify(self)
+                return self.selectedAssets;
+            }];
         
         self.dataSourceChangeSignal = [[RACObserve(self, dataSource)
-                                        ignore:nil]
-                                       filter:^BOOL(id value) {
-            return [value count] > 0;
-        }];
+            ignore:nil]
+            filter:^BOOL(id value) {
+                return [value count] > 0;
+            }];
     }
     return self;
 }

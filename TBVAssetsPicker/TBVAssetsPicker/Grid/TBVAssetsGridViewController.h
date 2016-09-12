@@ -11,5 +11,5 @@
 @class TBVAssetsGridViewModel, TBVAssetsPickerController;
 @interface TBVAssetsGridViewController : UICollectionViewController
 - (instancetype)initWithViewModel:(TBVAssetsGridViewModel *)viewModel
-                           picker:(TBVAssetsPickerController *)picker;
+                           picker:(__weak TBVAssetsPickerController *)picker;
 @end

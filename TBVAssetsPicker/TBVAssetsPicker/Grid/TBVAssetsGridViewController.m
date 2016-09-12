@@ -82,16 +82,16 @@ static NSString *const kTBVAssetsGridViewCellReuseIdentifier = @"kTBVAssetsGridV
     if (self.tbv_picker.shouldScrollToBottom) {
         [[[[RACObserve(self, collectionView.contentSize)
             ignore:nil]
-           filter:^BOOL(id value) {
-               @strongify(self)
-               return [value CGSizeValue].height > self.collectionView.frame.size.height;
-           }]
-          take:1]
-         subscribeNext:^(id x) {
-             @strongify(self)
-             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.viewModel.dataSource.count - 1 inSection:0];
-             [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
-         }];
+            filter:^BOOL(id value) {
+                @strongify(self)
+                return [value CGSizeValue].height > self.collectionView.frame.size.height;
+            }]
+            take:1]
+            subscribeNext:^(id x) {
+                @strongify(self)
+                NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.viewModel.dataSource.count - 1 inSection:0];
+                [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
+            }];
     }
     
     [self.toolBar bindViewModel:self.viewModel.toolBarViewModel];
@@ -99,12 +99,12 @@ static NSString *const kTBVAssetsGridViewCellReuseIdentifier = @"kTBVAssetsGridV
     [[[[[NSNotificationCenter defaultCenter]
         rac_addObserverForName:TBVAssetsPickerAssetsDidChangeNotification
         object:nil]
-       takeUntil:self.rac_willDeallocSignal]
-      distinctUntilChanged]
-     subscribeNext:^(id x) {
-         @strongify(self)
-         /* refresh list */
-     }];
+        takeUntil:self.rac_willDeallocSignal]
+        distinctUntilChanged]
+        subscribeNext:^(id x) {
+            @strongify(self)
+            /* refresh list */
+        }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

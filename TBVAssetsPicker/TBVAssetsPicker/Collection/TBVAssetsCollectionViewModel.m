@@ -15,22 +15,21 @@
     if (self = [self init]) {
         self.requestDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             return [[[picker.pickerManager requestAllCollections]
-              filter:^BOOL(NSArray *value) {
-                  return value.count > 0;
-              }]
-             map:^id(NSArray *value) {
-                 //TODO: 这些地方到时候都可以优化，比如是否在外部生产dataSource等，viewModel不应该涉及到vc，其实可以把这个vc换成一个NSObject的Picker，然后在picker内部创建导航控制器
-                 RACSequence *dataSource = [value.rac_sequence map:^id(TBVCollection *value) {
-                     return [[TBVAssetsCollectionItemViewModel alloc] initWithCollection:value
-                                                                                 picker:picker];
-                 }];
-                 if (!picker.showsEmptyAlbums) {
-                     dataSource = [dataSource filter:^BOOL(TBVAssetsCollectionItemViewModel *value) {
-                         return [value.collection collectionAccurateAssetCountWithMediaType:picker.mediaType] > 0;
-                     }];
-                 }
-                 return dataSource.array;
-             }];
+                filter:^BOOL(NSArray *value) {
+                    return value.count > 0;
+                }]
+                map:^id(NSArray *value) {
+                    RACSequence *dataSource = [value.rac_sequence map:^id(TBVCollection *value) {
+                        return [[TBVAssetsCollectionItemViewModel alloc] initWithCollection:value
+                                                                                     picker:picker];
+                    }];
+                    if (!picker.showsEmptyAlbums) {
+                        dataSource = [dataSource filter:^BOOL(TBVAssetsCollectionItemViewModel *value) {
+                            return [value.collection collectionAccurateAssetCountWithMediaType:picker.mediaType] > 0;
+                        }];
+                    }
+                    return dataSource.array;
+                }];
         }];
         RAC(self, dataSource) = [[self.requestDataCommand executionSignals] switchToLatest];
         [self.requestDataCommand execute:nil];
