@@ -10,7 +10,6 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "ALAssetsFilter+TBVAssetsManager.h"
 #import "TBVAssetsLibrary.h"
-#import "TBVAssetsPickerTypes.h"
 #import "TBVAssetsManagerTypes.h"
 #import "TBVAsset.h"
 #import "TBVCollection.h"

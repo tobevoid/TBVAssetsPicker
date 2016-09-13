@@ -9,7 +9,6 @@
 #import <Photos/Photos.h>
 #import "PHFetchOptions+TBVAssetsManager.h"
 #import "TBVCachingImageManager.h"
-#import "TBVAssetsPickerTypes.h"
 #import "TBVAsset.h"
 #import "TBVCollection.h"
 

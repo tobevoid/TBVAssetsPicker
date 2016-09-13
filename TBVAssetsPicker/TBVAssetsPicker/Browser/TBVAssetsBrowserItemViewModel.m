@@ -8,6 +8,7 @@
 
 #import "TBVAssetsBrowserItemViewModel.h"
 #import "TBVAssetsPickerManager.h"
+#import "TBVAssetsPickerTypes.h"
 
 @implementation TBVAssetsBrowserItemViewModel
 - (instancetype)initWithAsset:(TBVAsset *)asset

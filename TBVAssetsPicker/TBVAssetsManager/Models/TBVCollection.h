@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TBVAssetsPickerTypes.h"
 
 @class TBVAsset;
 @interface TBVCollection : NSObject
