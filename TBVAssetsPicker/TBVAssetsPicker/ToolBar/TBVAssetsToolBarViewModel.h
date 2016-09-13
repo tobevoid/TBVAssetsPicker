@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
-
-@class TBVAssetsPickerManager, TBVAsset;
+@class TBVAsset;
+@class TBVAssetsPickerManager;
 @interface TBVAssetsToolBarViewModel : NSObject
 @property (assign, nonatomic) NSInteger maxSeletedCount;
 @property (assign, nonatomic) NSArray <TBVAsset *> *seletedAssets;

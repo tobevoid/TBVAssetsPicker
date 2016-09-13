@@ -79,7 +79,7 @@ static NSString *const kTBVAssetsGridViewCellReuseIdentifier = @"kTBVAssetsGridV
         [self.collectionView reloadData];
     }];
     
-    if (self.tbv_picker.shouldScrollToBottom) {
+    if (self.tbv_picker.configuration.shouldScrollToBottom) {
         [[[[RACObserve(self, collectionView.contentSize)
             ignore:nil]
             filter:^BOOL(id value) {

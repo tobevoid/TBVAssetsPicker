@@ -14,7 +14,8 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "TBVAssetsPickerTypes.h"
 
-@class TBVAsset, TBVCollection;
+@class TBVAsset;
+@class TBVCollection;
 @protocol TBVAssetsManagerProtocol <NSObject>
 @required
 //====================================

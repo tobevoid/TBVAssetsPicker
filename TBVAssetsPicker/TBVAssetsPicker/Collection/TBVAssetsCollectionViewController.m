@@ -100,7 +100,7 @@ static NSString *const kTBVAssetsCollectionViewCellReuseIdentifier = @"kTBVAsset
     TBVAssetsGridViewModel *viewModel = [[TBVAssetsGridViewModel alloc]
                                         initWithCollection:collection
                                         picker:self.tbv_picker.pickerManager
-                                        mediaType:self.tbv_picker.mediaType];
+                                        mediaType:self.tbv_picker.configuration.mediaType];
     TBVAssetsGridViewController *viewController = [[TBVAssetsGridViewController alloc]
                                                   initWithViewModel:viewModel
                                                   picker:self.tbv_picker];
@@ -117,7 +117,7 @@ static NSString *const kTBVAssetsCollectionViewCellReuseIdentifier = @"kTBVAsset
 - (TBVAssetsCollectionViewModel *)viewModel
 {
     if (_viewModel == nil) {
-        _viewModel = [[TBVAssetsCollectionViewModel alloc] initWithPicker:self.tbv_picker];;
+        _viewModel = [[TBVAssetsCollectionViewModel alloc] initWithPicker:self.tbv_picker.pickerManager configuration:self.tbv_picker.configuration];;
     }
     
     return _viewModel;

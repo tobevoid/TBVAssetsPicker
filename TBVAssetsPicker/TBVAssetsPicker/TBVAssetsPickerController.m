@@ -24,8 +24,6 @@
 - (instancetype)initWithPickManager:(TBVAssetsPickerManager *)manager {
     if (self = [self init]) {
         _pickerManager = manager;
-        _maxSelectedCount = 9;
-        _shouldScrollToBottom = YES;
     }
     return self;
 }
@@ -78,7 +76,7 @@
         TBVAssetsGridViewModel *viewModel = [[TBVAssetsGridViewModel alloc]
                                             initWithCollection:collection
                                             picker:self.pickerManager
-                                            mediaType:self.mediaType];
+                                            mediaType:self.configuration.mediaType];
         TBVAssetsGridViewController *viewController = [[TBVAssetsGridViewController alloc]
                                                       initWithViewModel:viewModel
                                                       picker:self];
@@ -122,8 +120,18 @@
 {
     if (_pickerManager == nil) {
         _pickerManager = [TBVAssetsPickerManager manager];
+        TBVLogInfo(@"create default manager");
     }
     
     return _pickerManager;
+}
+
+- (TBVAssetsConfiguration *)configuration {
+    if (_configuration == nil) {
+        _configuration = [TBVAssetsConfiguration defaultConfiguration];
+        TBVLogInfo(@"create default configuration");
+    }
+    
+    return _configuration;
 }
 @end

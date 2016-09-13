@@ -10,6 +10,7 @@
 #import "TBVAssetsPickerController.h"
 #import "TBVLogger.h"
 #import "TBVAssetsReformer.h"
+#import "TBVAssetsConfiguration.h"
 
 @interface ViewController () <TBVAssetsPickerControllerDelegate>
 @property (strong, nonatomic) TBVAssetsReformer *reformer;

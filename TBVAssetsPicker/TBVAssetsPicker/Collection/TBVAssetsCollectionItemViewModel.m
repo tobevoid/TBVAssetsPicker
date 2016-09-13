@@ -7,7 +7,7 @@
 //
 
 #import "TBVAssetsCollectionItemViewModel.h"
-#import "TBVAssetsPickerController+PickerManager.h"
+#import "TBVAssetsPickerManager.h"
 #import "TBVCollection.h"
 
 @interface TBVAssetsCollectionItemViewModel()
@@ -17,15 +17,16 @@
 
 @implementation TBVAssetsCollectionItemViewModel
 - (instancetype)initWithCollection:(TBVCollection *)collection
-                            picker:(__weak TBVAssetsPickerController *)picker {
+                            picker:(__weak TBVAssetsPickerManager *)picker
+                         mediaType:(TBVAssetsPickerMediaType)mediaType {
     if (self = [self init]) {
         self.collection = collection;
         
-        self.posterImageSignal = [picker.pickerManager requestPosterImageForCollection:collection
-                                                                             mediaType:picker.mediaType];
+        self.posterImageSignal = [picker requestPosterImageForCollection:collection
+                                                               mediaType:mediaType];
         self.title = [NSString stringWithFormat:@"%@ (%@)",
                       collection.collectionTitle,
-                      @([collection collectionAccurateAssetCountWithMediaType:picker.mediaType])];
+                      @([collection collectionAccurateAssetCountWithMediaType:mediaType])];
     }
     return self;
 }

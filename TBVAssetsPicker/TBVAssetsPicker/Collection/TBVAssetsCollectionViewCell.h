@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class TBVCollection, TBVAssetsCollectionItemViewModel;
+@class TBVCollection;
+@class TBVAssetsCollectionItemViewModel;
 @interface TBVAssetsCollectionViewCell : UITableViewCell
 - (void)bindViewModel:(TBVAssetsCollectionItemViewModel *)viewModel;
 @end

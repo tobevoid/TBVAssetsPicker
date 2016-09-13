@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class TBVAssetsGridViewModel, TBVAssetsPickerController;
+@class TBVAssetsGridViewModel;
+@class TBVAssetsPickerController;
 @interface TBVAssetsGridViewController : UICollectionViewController
 - (instancetype)initWithViewModel:(TBVAssetsGridViewModel *)viewModel
                            picker:(__weak TBVAssetsPickerController *)picker;

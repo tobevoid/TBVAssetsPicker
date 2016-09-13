@@ -6,7 +6,6 @@
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
 #import "TBVAssetsPickerManager.h"
-#import "TBVAssetsPickerController.h"
 #import "TBVAssetsGridViewModel.h"
 #import "TBVAssetsGridItemViewModel.h"
 #import "TBVAssetsPickerTypes.h"

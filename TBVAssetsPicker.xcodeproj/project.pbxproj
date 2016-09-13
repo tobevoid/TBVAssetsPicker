@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D6377AD21D8678FA005C3DA6 /* TBVAssetsReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6377AD11D8678FA005C3DA6 /* TBVAssetsReformer.m */; };
 		D6377AD61D867D99005C3DA6 /* TBVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D6377AD51D867D99005C3DA6 /* TBVLogger.m */; };
+		D646A1B91D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1B81D8792BE00CB42BB /* TBVAssetsConfiguration.m */; };
+		D646A1BA1D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1B81D8792BE00CB42BB /* TBVAssetsConfiguration.m */; };
+		D646A1BB1D8792C200CB42BB /* TBVAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A7B1D84DD7B00359C9E /* TBVAssetsPickerController.m */; };
 		D68529F61D84DD2700359C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F51D84DD2700359C9E /* main.m */; };
 		D68529F91D84DD2700359C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F81D84DD2700359C9E /* AppDelegate.m */; };
 		D68529FC1D84DD2700359C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529FB1D84DD2700359C9E /* ViewController.m */; };
@@ -85,6 +88,8 @@
 		D6377AD11D8678FA005C3DA6 /* TBVAssetsReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsReformer.m; sourceTree = "<group>"; };
 		D6377AD41D867D99005C3DA6 /* TBVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVLogger.h; sourceTree = "<group>"; };
 		D6377AD51D867D99005C3DA6 /* TBVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVLogger.m; sourceTree = "<group>"; };
+		D646A1B71D8792BE00CB42BB /* TBVAssetsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsConfiguration.h; sourceTree = "<group>"; };
+		D646A1B81D8792BE00CB42BB /* TBVAssetsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsConfiguration.m; sourceTree = "<group>"; };
 		D68529F11D84DD2700359C9E /* TBVAssetsPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVAssetsPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68529F51D84DD2700359C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D68529F71D84DD2700359C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -308,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				D6852A281D84DD7B00359C9E /* Base */,
+				D6852A7E1D84DD7B00359C9E /* ToolBar */,
 				D6852A2F1D84DD7B00359C9E /* Browser */,
 				D6852A3A1D84DD7B00359C9E /* Categories */,
 				D6852A531D84DD7B00359C9E /* Collection */,
@@ -318,9 +324,10 @@
 				D6852A751D84DD7B00359C9E /* Models */,
 				D6852A7A1D84DD7B00359C9E /* TBVAssetsPickerController.h */,
 				D6852A7B1D84DD7B00359C9E /* TBVAssetsPickerController.m */,
+				D646A1B71D8792BE00CB42BB /* TBVAssetsConfiguration.h */,
+				D646A1B81D8792BE00CB42BB /* TBVAssetsConfiguration.m */,
 				D6852A7C1D84DD7B00359C9E /* TBVAssetsPickerTypes.h */,
 				D6852A7D1D84DD7B00359C9E /* TBVAssetsPickerTypes.m */,
-				D6852A7E1D84DD7B00359C9E /* ToolBar */,
 			);
 			path = TBVAssetsPicker;
 			sourceTree = "<group>";
@@ -671,6 +678,7 @@
 				D6852A891D84DD7B00359C9E /* TBVAssetsBrowserItemViewModel.m in Sources */,
 				D6377AD61D867D99005C3DA6 /* TBVLogger.m in Sources */,
 				D6852AA51D84DD7B00359C9E /* TBVAssetsPickerManager.m in Sources */,
+				D646A1B91D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */,
 				D68529FC1D84DD2700359C9E /* ViewController.m in Sources */,
 				D6852AAA1D84DD7B00359C9E /* TBVAssetsPickerTypes.m in Sources */,
 				D6852A9D1D84DD7B00359C9E /* TBVAssetsPickerAccessDeniedViewController.m in Sources */,
@@ -713,6 +721,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D646A1BB1D8792C200CB42BB /* TBVAssetsPickerController.m in Sources */,
+				D646A1BA1D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */,
 				D6852A0F1D84DD2700359C9E /* TBVAssetsPickerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

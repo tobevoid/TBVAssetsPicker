@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "TBVAsset.h"
 #import "TBVAssetsPickerTypes.h"
+#import "TBVAssetsConfiguration.h"
 
 @class TBVAsset;
 @class TBVAssetsPickerManager;
@@ -35,12 +35,7 @@
 
 @interface TBVAssetsPickerController : UIViewController
 - (instancetype)initWithPickManager:(TBVAssetsPickerManager *)manager;
-
+@property (strong, nonatomic) TBVAssetsConfiguration *configuration;
 @property (weak, nonatomic) id<TBVAssetsPickerControllerDelegate> delegate;
 @property (weak, nonatomic) id<TBVAssetsPickerControllerDataSource> dataSource;
-@property (nonatomic, strong) NSArray <TBVAsset *> *selectedAssets;
-@property (assign, nonatomic) NSInteger maxSelectedCount;
-@property (assign, nonatomic) BOOL showsEmptyAlbums;
-@property (assign, nonatomic) TBVAssetsPickerMediaType mediaType;
-@property (assign, nonatomic) BOOL shouldScrollToBottom;
 @end

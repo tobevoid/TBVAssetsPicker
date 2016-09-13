@@ -18,7 +18,7 @@
     viewModel.toolBarViewModel = [TBVAssetsPickerViewModelHelper
                                   toolBarViewModelWithPicker:picker
                                   selectedAssetsChangeSignal:viewModel.selectedAssetsChangeSignal];
-    viewModel.maxSeletedCount = picker.maxSelectedCount;
+    viewModel.maxSeletedCount = picker.configuration.maxSelectedCount;
     @weakify(picker)
     [[[viewModel.didSelectCommand
         executionSignals]
@@ -27,7 +27,7 @@
             @strongify(picker)
             if (!value && [picker.delegate respondsToSelector:@selector(assetsPickerController:overMaxSelectedCount:)]) {
                 [picker.delegate assetsPickerController:picker
-                                   overMaxSelectedCount:picker.maxSelectedCount];
+                                   overMaxSelectedCount:picker.configuration.maxSelectedCount];
             }
         }];
 }
@@ -36,7 +36,7 @@
                              selectedAssetsChangeSignal:(RACSignal *)changeSignal {
     TBVAssetsToolBarViewModel *toolBarViewModel = [[TBVAssetsToolBarViewModel alloc]
                                        initWithPicker:picker.pickerManager];
-    toolBarViewModel.maxSeletedCount = picker.maxSelectedCount;
+    toolBarViewModel.maxSeletedCount = picker.configuration.maxSelectedCount;
     @weakify(picker)
     [[[toolBarViewModel.didSendCommand
         executionSignals]
