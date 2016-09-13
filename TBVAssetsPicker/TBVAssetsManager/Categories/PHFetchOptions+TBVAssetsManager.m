@@ -6,9 +6,9 @@
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
 
-#import "PHFetchOptions+TBVAssetsPicker.h"
+#import "PHFetchOptions+TBVAssetsManager.h"
 
-@implementation PHFetchOptions (TBVAssetsPicker)
+@implementation PHFetchOptions (TBVAssetsManager)
 + (instancetype)tbv_fetchOptionsWithCustomMediaType:(TBVAssetsPickerMediaType)mediaType {
     NSArray *mediaTypes = [self tbv_mediaTypesWithCustonMediaType:mediaType];
     if (!mediaTypes.count) return nil;

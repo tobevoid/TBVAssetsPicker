@@ -6,9 +6,9 @@
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
 
-#import "PHPhotoLibrary+TBVAssetsPicker.h"
+#import "PHPhotoLibrary+TBVAssetsManager.h"
 
-@implementation PHPhotoLibrary (TBVAssetsPicker)
+@implementation PHPhotoLibrary (TBVAssetsManager)
 + (BQAuthorizationStatus)tbv_authorizationStatus {
     switch ([self authorizationStatus]) {
         case PHAuthorizationStatusNotDetermined:

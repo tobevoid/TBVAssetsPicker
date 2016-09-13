@@ -6,11 +6,11 @@
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
 
-#import "ALAssetsLibrary+TBVAssetsPicker.h"
+#import "ALAssetsLibrary+TBVAssetsManager.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wdeprecated"
-@implementation ALAssetsLibrary (TBVAssetsPicker)
+@implementation ALAssetsLibrary (TBVAssetsManager)
 + (BQAuthorizationStatus)tbv_authorizationStatus {
     switch ([self authorizationStatus]) {
         case ALAuthorizationStatusNotDetermined:

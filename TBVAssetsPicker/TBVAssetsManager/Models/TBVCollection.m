@@ -6,9 +6,9 @@
 //  Copyright © 2015年 tripleCC. All rights reserved.
 //
 #import <Photos/Photos.h>
-#import "PHAssetCollection+TBVAssetsPicker.h"
-#import "PHFetchOptions+TBVAssetsPicker.h"
-#import "ALAssetsFilter+TBVAssetsPicker.h"
+#import "PHAssetCollection+TBVAssetsManager.h"
+#import "PHFetchOptions+TBVAssetsManager.h"
+#import "ALAssetsFilter+TBVAssetsManager.h"
 #import "TBVCollection.h"
 
 @implementation TBVCollection

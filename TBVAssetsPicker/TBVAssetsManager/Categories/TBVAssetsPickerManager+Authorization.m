@@ -7,8 +7,8 @@
 //
 
 #import "TBVAssetsPickerManager+Authorization.h"
-#import "ALAssetsLibrary+TBVAssetsPicker.h"
-#import "PHPhotoLibrary+TBVAssetsPicker.h"
+#import "ALAssetsLibrary+TBVAssetsManager.h"
+#import "PHPhotoLibrary+TBVAssetsManager.h"
 
 @implementation TBVAssetsPickerManager (Authorization)
 - (BQAuthorizationStatus)authorizationStatus {

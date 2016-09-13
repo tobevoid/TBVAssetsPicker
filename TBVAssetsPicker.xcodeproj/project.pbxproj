@@ -12,6 +12,28 @@
 		D646A1B91D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1B81D8792BE00CB42BB /* TBVAssetsConfiguration.m */; };
 		D646A1BA1D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1B81D8792BE00CB42BB /* TBVAssetsConfiguration.m */; };
 		D646A1BB1D8792C200CB42BB /* TBVAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A7B1D84DD7B00359C9E /* TBVAssetsPickerController.m */; };
+		D646A1D91D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1BF1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m */; };
+		D646A1DA1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1BF1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m */; };
+		D646A1DB1D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C11D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m */; };
+		D646A1DC1D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C11D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m */; };
+		D646A1DD1D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C31D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m */; };
+		D646A1DE1D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C31D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m */; };
+		D646A1DF1D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C51D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m */; };
+		D646A1E01D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C51D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m */; };
+		D646A1E31D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C91D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m */; };
+		D646A1E41D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1C91D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m */; };
+		D646A1E51D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1CB1D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m */; };
+		D646A1E61D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1CB1D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m */; };
+		D646A1E71D8799BE00CB42BB /* TBVAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1CE1D8799BE00CB42BB /* TBVAssetsLibrary.m */; };
+		D646A1E81D8799BE00CB42BB /* TBVAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1CE1D8799BE00CB42BB /* TBVAssetsLibrary.m */; };
+		D646A1E91D8799BE00CB42BB /* TBVAssetsPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D11D8799BE00CB42BB /* TBVAssetsPickerManager.m */; };
+		D646A1EA1D8799BE00CB42BB /* TBVAssetsPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D11D8799BE00CB42BB /* TBVAssetsPickerManager.m */; };
+		D646A1EB1D8799BE00CB42BB /* TBVCachingImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D31D8799BE00CB42BB /* TBVCachingImageManager.m */; };
+		D646A1EC1D8799BE00CB42BB /* TBVCachingImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D31D8799BE00CB42BB /* TBVCachingImageManager.m */; };
+		D646A1ED1D8799BE00CB42BB /* TBVAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D61D8799BE00CB42BB /* TBVAsset.m */; };
+		D646A1EE1D8799BE00CB42BB /* TBVAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D61D8799BE00CB42BB /* TBVAsset.m */; };
+		D646A1EF1D8799BE00CB42BB /* TBVCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D81D8799BE00CB42BB /* TBVCollection.m */; };
+		D646A1F01D8799BE00CB42BB /* TBVCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D81D8799BE00CB42BB /* TBVCollection.m */; };
 		D68529F61D84DD2700359C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F51D84DD2700359C9E /* main.m */; };
 		D68529F91D84DD2700359C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F81D84DD2700359C9E /* AppDelegate.m */; };
 		D68529FC1D84DD2700359C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529FB1D84DD2700359C9E /* ViewController.m */; };
@@ -28,16 +50,7 @@
 		D6852A8A1D84DD7B00359C9E /* TBVAssetsBrowserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A351D84DD7B00359C9E /* TBVAssetsBrowserViewCell.m */; };
 		D6852A8B1D84DD7B00359C9E /* TBVAssetsBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A371D84DD7B00359C9E /* TBVAssetsBrowserViewController.m */; };
 		D6852A8C1D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A391D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m */; };
-		D6852A8D1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A3C1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m */; };
-		D6852A8E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A3E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m */; };
-		D6852A901D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A421D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m */; };
-		D6852A911D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A441D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.m */; };
-		D6852A921D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A461D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.m */; };
-		D6852A931D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A481D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.m */; };
 		D6852A941D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A4A1D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.m */; };
-		D6852A951D84DD7B00359C9E /* TBVAssetsPickerManager+ALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A4C1D84DD7B00359C9E /* TBVAssetsPickerManager+ALManager.m */; };
-		D6852A961D84DD7B00359C9E /* TBVAssetsPickerManager+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A4E1D84DD7B00359C9E /* TBVAssetsPickerManager+Authorization.m */; };
-		D6852A971D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A501D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.m */; };
 		D6852A981D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A521D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.m */; };
 		D6852A991D84DD7B00359C9E /* TBVAssetsCollectionItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A551D84DD7B00359C9E /* TBVAssetsCollectionItemViewModel.m */; };
 		D6852A9A1D84DD7B00359C9E /* TBVAssetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A571D84DD7B00359C9E /* TBVAssetsCollectionViewCell.m */; };
@@ -50,11 +63,6 @@
 		D6852AA11D84DD7B00359C9E /* TBVAssetsGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A671D84DD7B00359C9E /* TBVAssetsGridViewController.m */; };
 		D6852AA21D84DD7B00359C9E /* TBVAssetsGridViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A691D84DD7B00359C9E /* TBVAssetsGridViewModel.m */; };
 		D6852AA31D84DD7B00359C9E /* TBVAssetsPickerViewModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A6C1D84DD7B00359C9E /* TBVAssetsPickerViewModelHelper.m */; };
-		D6852AA41D84DD7B00359C9E /* TBVAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A6F1D84DD7B00359C9E /* TBVAssetsLibrary.m */; };
-		D6852AA51D84DD7B00359C9E /* TBVAssetsPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A721D84DD7B00359C9E /* TBVAssetsPickerManager.m */; };
-		D6852AA61D84DD7B00359C9E /* TBVCachingImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A741D84DD7B00359C9E /* TBVCachingImageManager.m */; };
-		D6852AA71D84DD7B00359C9E /* TBVAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A771D84DD7B00359C9E /* TBVAsset.m */; };
-		D6852AA81D84DD7B00359C9E /* TBVCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A791D84DD7B00359C9E /* TBVCollection.m */; };
 		D6852AA91D84DD7B00359C9E /* TBVAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A7B1D84DD7B00359C9E /* TBVAssetsPickerController.m */; };
 		D6852AAA1D84DD7B00359C9E /* TBVAssetsPickerTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A7D1D84DD7B00359C9E /* TBVAssetsPickerTypes.m */; };
 		D6852AAB1D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A801D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m */; };
@@ -90,6 +98,29 @@
 		D6377AD51D867D99005C3DA6 /* TBVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVLogger.m; sourceTree = "<group>"; };
 		D646A1B71D8792BE00CB42BB /* TBVAssetsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsConfiguration.h; sourceTree = "<group>"; };
 		D646A1B81D8792BE00CB42BB /* TBVAssetsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsConfiguration.m; sourceTree = "<group>"; };
+		D646A1BE1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsFilter+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D646A1BF1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsFilter+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D646A1C01D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D646A1C11D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D646A1C21D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAssetCollection+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D646A1C31D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAssetCollection+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D646A1C41D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHFetchOptions+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D646A1C51D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHFetchOptions+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D646A1C81D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHPhotoLibrary+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D646A1C91D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHPhotoLibrary+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D646A1CA1D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBVAssetsPickerManager+Authorization.h"; sourceTree = "<group>"; };
+		D646A1CB1D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBVAssetsPickerManager+Authorization.m"; sourceTree = "<group>"; };
+		D646A1CD1D8799BE00CB42BB /* TBVAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsLibrary.h; sourceTree = "<group>"; };
+		D646A1CE1D8799BE00CB42BB /* TBVAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsLibrary.m; sourceTree = "<group>"; };
+		D646A1CF1D8799BE00CB42BB /* TBVAssetsManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsManagerProtocol.h; sourceTree = "<group>"; };
+		D646A1D01D8799BE00CB42BB /* TBVAssetsPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsPickerManager.h; sourceTree = "<group>"; };
+		D646A1D11D8799BE00CB42BB /* TBVAssetsPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsPickerManager.m; sourceTree = "<group>"; };
+		D646A1D21D8799BE00CB42BB /* TBVCachingImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCachingImageManager.h; sourceTree = "<group>"; };
+		D646A1D31D8799BE00CB42BB /* TBVCachingImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCachingImageManager.m; sourceTree = "<group>"; };
+		D646A1D51D8799BE00CB42BB /* TBVAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAsset.h; sourceTree = "<group>"; };
+		D646A1D61D8799BE00CB42BB /* TBVAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAsset.m; sourceTree = "<group>"; };
+		D646A1D71D8799BE00CB42BB /* TBVCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCollection.h; sourceTree = "<group>"; };
+		D646A1D81D8799BE00CB42BB /* TBVCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCollection.m; sourceTree = "<group>"; };
 		D68529F11D84DD2700359C9E /* TBVAssetsPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVAssetsPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68529F51D84DD2700359C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D68529F71D84DD2700359C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,26 +153,8 @@
 		D6852A371D84DD7B00359C9E /* TBVAssetsBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsBrowserViewController.m; sourceTree = "<group>"; };
 		D6852A381D84DD7B00359C9E /* TBVAssetsBrowserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsBrowserViewModel.h; sourceTree = "<group>"; };
 		D6852A391D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsBrowserViewModel.m; sourceTree = "<group>"; };
-		D6852A3B1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsFilter+TBVAssetsPicker.h"; sourceTree = "<group>"; };
-		D6852A3C1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsFilter+TBVAssetsPicker.m"; sourceTree = "<group>"; };
-		D6852A3D1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+TBVAssetsPicker.h"; sourceTree = "<group>"; };
-		D6852A3E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+TBVAssetsPicker.m"; sourceTree = "<group>"; };
-		D6852A411D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAssetCollection+TBVAssetsPicker.h"; sourceTree = "<group>"; };
-		D6852A421D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAssetCollection+TBVAssetsPicker.m"; sourceTree = "<group>"; };
-		D6852A431D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHFetchOptions+TBVAssetsPicker.h"; sourceTree = "<group>"; };
-		D6852A441D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHFetchOptions+TBVAssetsPicker.m"; sourceTree = "<group>"; };
-		D6852A451D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHImageManager+TBVAssetsPicker.h"; sourceTree = "<group>"; };
-		D6852A461D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHImageManager+TBVAssetsPicker.m"; sourceTree = "<group>"; };
-		D6852A471D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHPhotoLibrary+TBVAssetsPicker.h"; sourceTree = "<group>"; };
-		D6852A481D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHPhotoLibrary+TBVAssetsPicker.m"; sourceTree = "<group>"; };
 		D6852A491D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBVAssetsPickerController+PickerManager.h"; sourceTree = "<group>"; };
 		D6852A4A1D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBVAssetsPickerController+PickerManager.m"; sourceTree = "<group>"; };
-		D6852A4B1D84DD7B00359C9E /* TBVAssetsPickerManager+ALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBVAssetsPickerManager+ALManager.h"; sourceTree = "<group>"; };
-		D6852A4C1D84DD7B00359C9E /* TBVAssetsPickerManager+ALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBVAssetsPickerManager+ALManager.m"; sourceTree = "<group>"; };
-		D6852A4D1D84DD7B00359C9E /* TBVAssetsPickerManager+Authorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBVAssetsPickerManager+Authorization.h"; sourceTree = "<group>"; };
-		D6852A4E1D84DD7B00359C9E /* TBVAssetsPickerManager+Authorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBVAssetsPickerManager+Authorization.m"; sourceTree = "<group>"; };
-		D6852A4F1D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBVAssetsPickerManager+PHManager.h"; sourceTree = "<group>"; };
-		D6852A501D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBVAssetsPickerManager+PHManager.m"; sourceTree = "<group>"; };
 		D6852A511D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TBVAssetsPicker.h"; sourceTree = "<group>"; };
 		D6852A521D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TBVAssetsPicker.m"; sourceTree = "<group>"; };
 		D6852A541D84DD7B00359C9E /* TBVAssetsCollectionItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsCollectionItemViewModel.h; sourceTree = "<group>"; };
@@ -166,17 +179,6 @@
 		D6852A691D84DD7B00359C9E /* TBVAssetsGridViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsGridViewModel.m; sourceTree = "<group>"; };
 		D6852A6B1D84DD7B00359C9E /* TBVAssetsPickerViewModelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsPickerViewModelHelper.h; sourceTree = "<group>"; };
 		D6852A6C1D84DD7B00359C9E /* TBVAssetsPickerViewModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsPickerViewModelHelper.m; sourceTree = "<group>"; };
-		D6852A6E1D84DD7B00359C9E /* TBVAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsLibrary.h; sourceTree = "<group>"; };
-		D6852A6F1D84DD7B00359C9E /* TBVAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsLibrary.m; sourceTree = "<group>"; };
-		D6852A701D84DD7B00359C9E /* TBVAssetsManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsManagerProtocol.h; sourceTree = "<group>"; };
-		D6852A711D84DD7B00359C9E /* TBVAssetsPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsPickerManager.h; sourceTree = "<group>"; };
-		D6852A721D84DD7B00359C9E /* TBVAssetsPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsPickerManager.m; sourceTree = "<group>"; };
-		D6852A731D84DD7B00359C9E /* TBVCachingImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCachingImageManager.h; sourceTree = "<group>"; };
-		D6852A741D84DD7B00359C9E /* TBVCachingImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCachingImageManager.m; sourceTree = "<group>"; };
-		D6852A761D84DD7B00359C9E /* TBVAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAsset.h; sourceTree = "<group>"; };
-		D6852A771D84DD7B00359C9E /* TBVAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAsset.m; sourceTree = "<group>"; };
-		D6852A781D84DD7B00359C9E /* TBVCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCollection.h; sourceTree = "<group>"; };
-		D6852A791D84DD7B00359C9E /* TBVCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCollection.m; sourceTree = "<group>"; };
 		D6852A7A1D84DD7B00359C9E /* TBVAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsPickerController.h; sourceTree = "<group>"; };
 		D6852A7B1D84DD7B00359C9E /* TBVAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsPickerController.m; sourceTree = "<group>"; };
 		D6852A7C1D84DD7B00359C9E /* TBVAssetsPickerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsPickerTypes.h; sourceTree = "<group>"; };
@@ -242,6 +244,60 @@
 			path = TBVLogger;
 			sourceTree = "<group>";
 		};
+		D646A1BC1D8799BE00CB42BB /* TBVAssetsManager */ = {
+			isa = PBXGroup;
+			children = (
+				D646A1BD1D8799BE00CB42BB /* Categories */,
+				D646A1CC1D8799BE00CB42BB /* Managers */,
+				D646A1D41D8799BE00CB42BB /* Models */,
+			);
+			path = TBVAssetsManager;
+			sourceTree = "<group>";
+		};
+		D646A1BD1D8799BE00CB42BB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D646A1BE1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.h */,
+				D646A1BF1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m */,
+				D646A1C01D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.h */,
+				D646A1C11D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m */,
+				D646A1C21D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.h */,
+				D646A1C31D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m */,
+				D646A1C41D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.h */,
+				D646A1C51D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m */,
+				D646A1C81D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.h */,
+				D646A1C91D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m */,
+				D646A1CA1D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.h */,
+				D646A1CB1D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D646A1CC1D8799BE00CB42BB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D646A1CD1D8799BE00CB42BB /* TBVAssetsLibrary.h */,
+				D646A1CE1D8799BE00CB42BB /* TBVAssetsLibrary.m */,
+				D646A1CF1D8799BE00CB42BB /* TBVAssetsManagerProtocol.h */,
+				D646A1D01D8799BE00CB42BB /* TBVAssetsPickerManager.h */,
+				D646A1D11D8799BE00CB42BB /* TBVAssetsPickerManager.m */,
+				D646A1D21D8799BE00CB42BB /* TBVCachingImageManager.h */,
+				D646A1D31D8799BE00CB42BB /* TBVCachingImageManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D646A1D41D8799BE00CB42BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D646A1D51D8799BE00CB42BB /* TBVAsset.h */,
+				D646A1D61D8799BE00CB42BB /* TBVAsset.m */,
+				D646A1D71D8799BE00CB42BB /* TBVCollection.h */,
+				D646A1D81D8799BE00CB42BB /* TBVCollection.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D68529E81D84DD2700359C9E = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +323,7 @@
 		D68529F31D84DD2700359C9E /* TBVAssetsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				D646A1BC1D8799BE00CB42BB /* TBVAssetsManager */,
 				D6377AD31D867D99005C3DA6 /* TBVLogger */,
 				D6377ACF1D8678EB005C3DA6 /* TBVAssetsReformer */,
 				D6852A271D84DD7B00359C9E /* TBVAssetsPicker */,
@@ -320,8 +377,6 @@
 				D6852A5C1D84DD7B00359C9E /* Denied */,
 				D6852A5F1D84DD7B00359C9E /* Grid */,
 				D6852A6A1D84DD7B00359C9E /* Helper */,
-				D6852A6D1D84DD7B00359C9E /* Managers */,
-				D6852A751D84DD7B00359C9E /* Models */,
 				D6852A7A1D84DD7B00359C9E /* TBVAssetsPickerController.h */,
 				D6852A7B1D84DD7B00359C9E /* TBVAssetsPickerController.m */,
 				D646A1B71D8792BE00CB42BB /* TBVAssetsConfiguration.h */,
@@ -365,26 +420,8 @@
 		D6852A3A1D84DD7B00359C9E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				D6852A3B1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.h */,
-				D6852A3C1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m */,
-				D6852A3D1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.h */,
-				D6852A3E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m */,
-				D6852A411D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.h */,
-				D6852A421D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m */,
-				D6852A431D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.h */,
-				D6852A441D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.m */,
-				D6852A451D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.h */,
-				D6852A461D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.m */,
-				D6852A471D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.h */,
-				D6852A481D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.m */,
 				D6852A491D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.h */,
 				D6852A4A1D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.m */,
-				D6852A4B1D84DD7B00359C9E /* TBVAssetsPickerManager+ALManager.h */,
-				D6852A4C1D84DD7B00359C9E /* TBVAssetsPickerManager+ALManager.m */,
-				D6852A4D1D84DD7B00359C9E /* TBVAssetsPickerManager+Authorization.h */,
-				D6852A4E1D84DD7B00359C9E /* TBVAssetsPickerManager+Authorization.m */,
-				D6852A4F1D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.h */,
-				D6852A501D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.m */,
 				D6852A511D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.h */,
 				D6852A521D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.m */,
 			);
@@ -439,31 +476,6 @@
 				D6852A6C1D84DD7B00359C9E /* TBVAssetsPickerViewModelHelper.m */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		D6852A6D1D84DD7B00359C9E /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				D6852A6E1D84DD7B00359C9E /* TBVAssetsLibrary.h */,
-				D6852A6F1D84DD7B00359C9E /* TBVAssetsLibrary.m */,
-				D6852A701D84DD7B00359C9E /* TBVAssetsManagerProtocol.h */,
-				D6852A711D84DD7B00359C9E /* TBVAssetsPickerManager.h */,
-				D6852A721D84DD7B00359C9E /* TBVAssetsPickerManager.m */,
-				D6852A731D84DD7B00359C9E /* TBVCachingImageManager.h */,
-				D6852A741D84DD7B00359C9E /* TBVCachingImageManager.m */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		D6852A751D84DD7B00359C9E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				D6852A761D84DD7B00359C9E /* TBVAsset.h */,
-				D6852A771D84DD7B00359C9E /* TBVAsset.m */,
-				D6852A781D84DD7B00359C9E /* TBVCollection.h */,
-				D6852A791D84DD7B00359C9E /* TBVCollection.m */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		D6852A7E1D84DD7B00359C9E /* ToolBar */ = {
@@ -669,51 +681,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6852AAC1D84DD7B00359C9E /* TBVAssetsSendToolBar.m in Sources */,
-				D6852A951D84DD7B00359C9E /* TBVAssetsPickerManager+ALManager.m in Sources */,
-				D6852AA41D84DD7B00359C9E /* TBVAssetsLibrary.m in Sources */,
+				D646A1E71D8799BE00CB42BB /* TBVAssetsLibrary.m in Sources */,
 				D6852AA21D84DD7B00359C9E /* TBVAssetsGridViewModel.m in Sources */,
+				D646A1E31D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m in Sources */,
 				D6852AA31D84DD7B00359C9E /* TBVAssetsPickerViewModelHelper.m in Sources */,
 				D6852A941D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.m in Sources */,
 				D6852A9A1D84DD7B00359C9E /* TBVAssetsCollectionViewCell.m in Sources */,
+				D646A1DB1D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m in Sources */,
 				D6852A891D84DD7B00359C9E /* TBVAssetsBrowserItemViewModel.m in Sources */,
 				D6377AD61D867D99005C3DA6 /* TBVLogger.m in Sources */,
-				D6852AA51D84DD7B00359C9E /* TBVAssetsPickerManager.m in Sources */,
+				D646A1E91D8799BE00CB42BB /* TBVAssetsPickerManager.m in Sources */,
 				D646A1B91D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */,
 				D68529FC1D84DD2700359C9E /* ViewController.m in Sources */,
 				D6852AAA1D84DD7B00359C9E /* TBVAssetsPickerTypes.m in Sources */,
 				D6852A9D1D84DD7B00359C9E /* TBVAssetsPickerAccessDeniedViewController.m in Sources */,
+				D646A1ED1D8799BE00CB42BB /* TBVAsset.m in Sources */,
 				D6852A981D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.m in Sources */,
-				D6852A961D84DD7B00359C9E /* TBVAssetsPickerManager+Authorization.m in Sources */,
-				D6852A911D84DD7B00359C9E /* PHFetchOptions+TBVAssetsPicker.m in Sources */,
 				D6852A8A1D84DD7B00359C9E /* TBVAssetsBrowserViewCell.m in Sources */,
 				D6852A9E1D84DD7B00359C9E /* TBVAssetsGridFlowLayout.m in Sources */,
 				D6852A851D84DD7B00359C9E /* TBVAssetsItemViewModel.m in Sources */,
+				D646A1D91D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m in Sources */,
 				D6852A9C1D84DD7B00359C9E /* TBVAssetsCollectionViewModel.m in Sources */,
 				D6852AAB1D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m in Sources */,
 				D6852AAD1D84DD7B00359C9E /* TBVAssetsToolBarViewModel.m in Sources */,
 				D6852AA01D84DD7B00359C9E /* TBVAssetsGridViewCell.m in Sources */,
-				D6852AA61D84DD7B00359C9E /* TBVCachingImageManager.m in Sources */,
+				D646A1DD1D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m in Sources */,
 				D6852A9B1D84DD7B00359C9E /* TBVAssetsCollectionViewController.m in Sources */,
 				D6852A8C1D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m in Sources */,
-				D6852A931D84DD7B00359C9E /* PHPhotoLibrary+TBVAssetsPicker.m in Sources */,
 				D68529F91D84DD2700359C9E /* AppDelegate.m in Sources */,
 				D6377AD21D8678FA005C3DA6 /* TBVAssetsReformer.m in Sources */,
-				D6852AA71D84DD7B00359C9E /* TBVAsset.m in Sources */,
-				D6852A901D84DD7B00359C9E /* PHAssetCollection+TBVAssetsPicker.m in Sources */,
-				D6852A8D1D84DD7B00359C9E /* ALAssetsFilter+TBVAssetsPicker.m in Sources */,
-				D6852A971D84DD7B00359C9E /* TBVAssetsPickerManager+PHManager.m in Sources */,
 				D6852A9F1D84DD7B00359C9E /* TBVAssetsGridItemViewModel.m in Sources */,
-				D6852A8E1D84DD7B00359C9E /* ALAssetsLibrary+TBVAssetsPicker.m in Sources */,
 				D6852A861D84DD7B00359C9E /* TBVAssetsPickerSelectButton.m in Sources */,
 				D6852A881D84DD7B00359C9E /* TBVAssetsBrowserFlowLayout.m in Sources */,
-				D6852AA81D84DD7B00359C9E /* TBVCollection.m in Sources */,
-				D6852A921D84DD7B00359C9E /* PHImageManager+TBVAssetsPicker.m in Sources */,
 				D6852A871D84DD7B00359C9E /* TBVAssetsViewModel.m in Sources */,
+				D646A1EF1D8799BE00CB42BB /* TBVCollection.m in Sources */,
+				D646A1DF1D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m in Sources */,
 				D6852AA11D84DD7B00359C9E /* TBVAssetsGridViewController.m in Sources */,
 				D6852A8B1D84DD7B00359C9E /* TBVAssetsBrowserViewController.m in Sources */,
+				D646A1E51D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m in Sources */,
 				D68529F61D84DD2700359C9E /* main.m in Sources */,
 				D6852A991D84DD7B00359C9E /* TBVAssetsCollectionItemViewModel.m in Sources */,
 				D6852AA91D84DD7B00359C9E /* TBVAssetsPickerController.m in Sources */,
+				D646A1EB1D8799BE00CB42BB /* TBVCachingImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,8 +730,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D646A1E01D8799BE00CB42BB /* PHFetchOptions+TBVAssetsManager.m in Sources */,
+				D646A1DE1D8799BE00CB42BB /* PHAssetCollection+TBVAssetsManager.m in Sources */,
+				D646A1EC1D8799BE00CB42BB /* TBVCachingImageManager.m in Sources */,
 				D646A1BB1D8792C200CB42BB /* TBVAssetsPickerController.m in Sources */,
+				D646A1EE1D8799BE00CB42BB /* TBVAsset.m in Sources */,
 				D646A1BA1D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */,
+				D646A1E61D8799BE00CB42BB /* TBVAssetsPickerManager+Authorization.m in Sources */,
+				D646A1DC1D8799BE00CB42BB /* ALAssetsLibrary+TBVAssetsManager.m in Sources */,
+				D646A1EA1D8799BE00CB42BB /* TBVAssetsPickerManager.m in Sources */,
+				D646A1E81D8799BE00CB42BB /* TBVAssetsLibrary.m in Sources */,
+				D646A1F01D8799BE00CB42BB /* TBVCollection.m in Sources */,
+				D646A1E41D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m in Sources */,
+				D646A1DA1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m in Sources */,
 				D6852A0F1D84DD2700359C9E /* TBVAssetsPickerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

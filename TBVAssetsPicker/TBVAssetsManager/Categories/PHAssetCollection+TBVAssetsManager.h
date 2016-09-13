@@ -8,6 +8,6 @@
 
 #import <Photos/Photos.h>
 
-@interface PHAssetCollection (TBVAssetsPicker)
+@interface PHAssetCollection (TBVAssetsManager)
 - (NSUInteger)tbv_countOfAssetsFetchedWithOptions:(PHFetchOptions *)fetchOptions;
 @end

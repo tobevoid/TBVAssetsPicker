@@ -9,7 +9,7 @@
 #import <Photos/Photos.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "TBVAssetsPickerTypes.h"
-@interface PHPhotoLibrary (TBVAssetsPicker)
+@interface PHPhotoLibrary (TBVAssetsManager)
 + (BQAuthorizationStatus)tbv_authorizationStatus;
 + (RACSignal *)tbv_requestAuthorization;
 @end

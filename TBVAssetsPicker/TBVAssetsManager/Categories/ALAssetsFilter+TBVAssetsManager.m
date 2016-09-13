@@ -6,11 +6,11 @@
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
 
-#import "ALAssetsFilter+TBVAssetsPicker.h"
+#import "ALAssetsFilter+TBVAssetsManager.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wdeprecated"
-@implementation ALAssetsFilter (TBVAssetsPicker)
+@implementation ALAssetsFilter (TBVAssetsManager)
 + (instancetype)tbv_assetsFilterWithCustomMediaType:(TBVAssetsPickerMediaType)mediaType {
     if (mediaType == TBVAssetsPickerMediaTypeImage) {
         return [self allPhotos];

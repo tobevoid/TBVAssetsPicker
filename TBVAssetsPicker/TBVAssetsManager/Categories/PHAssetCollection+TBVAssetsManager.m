@@ -6,9 +6,9 @@
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
 
-#import "PHAssetCollection+TBVAssetsPicker.h"
+#import "PHAssetCollection+TBVAssetsManager.h"
 
-@implementation PHAssetCollection (TBVAssetsPicker)
+@implementation PHAssetCollection (TBVAssetsManager)
 - (NSUInteger)tbv_countOfAssetsFetchedWithOptions:(PHFetchOptions *)fetchOptions {
     PHFetchResult *result = [PHAsset fetchAssetsInAssetCollection:self options:fetchOptions];
     return result.count;

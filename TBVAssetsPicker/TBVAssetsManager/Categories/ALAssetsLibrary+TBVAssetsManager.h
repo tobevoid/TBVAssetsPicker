@@ -11,7 +11,7 @@
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wdeprecated"
-@interface ALAssetsLibrary (TBVAssetsPicker)
+@interface ALAssetsLibrary (TBVAssetsManager)
 + (BQAuthorizationStatus)tbv_authorizationStatus;
 + (RACSignal *)tbv_forceTriggerPermissionAsking;
 @end
