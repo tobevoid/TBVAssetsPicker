@@ -18,7 +18,7 @@
 @implementation TBVAssetsGridViewModel
 - (instancetype)initWithCollection:(TBVCollection *)collection
                             picker:(__weak TBVAssetsPickerManager *)picker
-                         mediaType:(TBVAssetsPickerMediaType)mediaType {
+                         mediaType:(TBVAssetsMediaType)mediaType {
     if (self = [self init]) {
         self.collection = collection;
         
@@ -72,7 +72,7 @@
 
 - (RACSignal *)dataSourceSignalWithCollection:(TBVCollection *)collection
                                        picker:(__weak TBVAssetsPickerManager *)picker
-                                    mediaType:(TBVAssetsPickerMediaType)mediaType {
+                                    mediaType:(TBVAssetsMediaType)mediaType {
     @weakify(self)
     return [[[picker requestAssetsForCollection:collection mediaType:mediaType]
         filter:^BOOL(NSArray *value) {

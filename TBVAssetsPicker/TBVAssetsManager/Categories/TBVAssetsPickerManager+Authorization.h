@@ -11,5 +11,5 @@
 @interface TBVAssetsPickerManager (Authorization)
 - (BOOL)isAuthorized;
 - (RACSignal *)requestAuthorization;
-- (BQAuthorizationStatus)authorizationStatus;
+- (TBVAssetsAuthorizationStatus)authorizationStatus;
 @end

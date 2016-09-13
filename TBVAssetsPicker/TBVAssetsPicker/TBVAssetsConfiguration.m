@@ -14,7 +14,7 @@
     configuration.selectedAssets = nil;
     configuration.maxSelectedCount = 9;
     configuration.showsEmptyAlbums = NO;
-    configuration.mediaType = TBVAssetsPickerMediaTypeImage;
+    configuration.mediaType = TBVAssetsMediaTypeImage;
     configuration.shouldScrollToBottom = YES;
     return configuration;
 }

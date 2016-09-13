@@ -18,7 +18,7 @@
         /* 这里Fill会让图片更清晰 */
         self.contentImageSignal = [picker requestImageForAsset:asset
                                                     targetSize:self.targetSize
-                                                   contentMode:TBVAssetsPickerContentModeFill];
+                                                   contentMode:TBVAssetsContentModeFill];
     }
     
     return self;

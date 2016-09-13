@@ -20,7 +20,7 @@
             map:^id(NSValue *value) {
                 return [picker requestImageForAsset:asset
                                          targetSize:[value CGSizeValue]
-                                        contentMode:TBVAssetsPickerContentModeFill];
+                                        contentMode:TBVAssetsContentModeFill];
             }]
             switchToLatest];
     }

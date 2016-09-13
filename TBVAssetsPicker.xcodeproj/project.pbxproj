@@ -34,6 +34,8 @@
 		D646A1EE1D8799BE00CB42BB /* TBVAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D61D8799BE00CB42BB /* TBVAsset.m */; };
 		D646A1EF1D8799BE00CB42BB /* TBVCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D81D8799BE00CB42BB /* TBVCollection.m */; };
 		D646A1F01D8799BE00CB42BB /* TBVCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D646A1D81D8799BE00CB42BB /* TBVCollection.m */; };
+		D65A7E891D880F0C00276B55 /* TBVAssetsManagerTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D65A7E881D880F0C00276B55 /* TBVAssetsManagerTypes.m */; };
+		D65A7E8A1D880F0C00276B55 /* TBVAssetsManagerTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D65A7E881D880F0C00276B55 /* TBVAssetsManagerTypes.m */; };
 		D68529F61D84DD2700359C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F51D84DD2700359C9E /* main.m */; };
 		D68529F91D84DD2700359C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529F81D84DD2700359C9E /* AppDelegate.m */; };
 		D68529FC1D84DD2700359C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68529FB1D84DD2700359C9E /* ViewController.m */; };
@@ -121,6 +123,8 @@
 		D646A1D61D8799BE00CB42BB /* TBVAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAsset.m; sourceTree = "<group>"; };
 		D646A1D71D8799BE00CB42BB /* TBVCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCollection.h; sourceTree = "<group>"; };
 		D646A1D81D8799BE00CB42BB /* TBVCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCollection.m; sourceTree = "<group>"; };
+		D65A7E871D880F0C00276B55 /* TBVAssetsManagerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsManagerTypes.h; sourceTree = "<group>"; };
+		D65A7E881D880F0C00276B55 /* TBVAssetsManagerTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsManagerTypes.m; sourceTree = "<group>"; };
 		D68529F11D84DD2700359C9E /* TBVAssetsPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVAssetsPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68529F51D84DD2700359C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D68529F71D84DD2700359C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 		D646A1BC1D8799BE00CB42BB /* TBVAssetsManager */ = {
 			isa = PBXGroup;
 			children = (
+				D65A7E871D880F0C00276B55 /* TBVAssetsManagerTypes.h */,
+				D65A7E881D880F0C00276B55 /* TBVAssetsManagerTypes.m */,
 				D646A1BD1D8799BE00CB42BB /* Categories */,
 				D646A1CC1D8799BE00CB42BB /* Managers */,
 				D646A1D41D8799BE00CB42BB /* Models */,
@@ -691,6 +697,7 @@
 				D6852A891D84DD7B00359C9E /* TBVAssetsBrowserItemViewModel.m in Sources */,
 				D6377AD61D867D99005C3DA6 /* TBVLogger.m in Sources */,
 				D646A1E91D8799BE00CB42BB /* TBVAssetsPickerManager.m in Sources */,
+				D65A7E891D880F0C00276B55 /* TBVAssetsManagerTypes.m in Sources */,
 				D646A1B91D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */,
 				D68529FC1D84DD2700359C9E /* ViewController.m in Sources */,
 				D6852AAA1D84DD7B00359C9E /* TBVAssetsPickerTypes.m in Sources */,
@@ -742,6 +749,7 @@
 				D646A1E81D8799BE00CB42BB /* TBVAssetsLibrary.m in Sources */,
 				D646A1F01D8799BE00CB42BB /* TBVCollection.m in Sources */,
 				D646A1E41D8799BE00CB42BB /* PHPhotoLibrary+TBVAssetsManager.m in Sources */,
+				D65A7E8A1D880F0C00276B55 /* TBVAssetsManagerTypes.m in Sources */,
 				D646A1DA1D8799BE00CB42BB /* ALAssetsFilter+TBVAssetsManager.m in Sources */,
 				D6852A0F1D84DD2700359C9E /* TBVAssetsPickerTests.m in Sources */,
 			);

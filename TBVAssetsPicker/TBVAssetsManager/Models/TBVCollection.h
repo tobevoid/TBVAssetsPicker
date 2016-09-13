@@ -20,6 +20,6 @@
 - (NSString *)collectionTitle;
 - (NSInteger)collectionEstimatedAssetCount;
 - (NSInteger)collectionAccurateAssetCountWithFetchOptions:(id)filterOptions;
-- (NSInteger)collectionAccurateAssetCountWithMediaType:(TBVAssetsPickerMediaType)mediaType;
+- (NSInteger)collectionAccurateAssetCountWithMediaType:(TBVAssetsMediaType)mediaType;
 @end
 

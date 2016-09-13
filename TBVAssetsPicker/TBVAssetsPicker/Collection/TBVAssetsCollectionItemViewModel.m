@@ -18,7 +18,7 @@
 @implementation TBVAssetsCollectionItemViewModel
 - (instancetype)initWithCollection:(TBVCollection *)collection
                             picker:(__weak TBVAssetsPickerManager *)picker
-                         mediaType:(TBVAssetsPickerMediaType)mediaType {
+                         mediaType:(TBVAssetsMediaType)mediaType {
     if (self = [self init]) {
         self.collection = collection;
         

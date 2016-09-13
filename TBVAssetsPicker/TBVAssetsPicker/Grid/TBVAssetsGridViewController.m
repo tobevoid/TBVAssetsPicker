@@ -97,7 +97,7 @@ static NSString *const kTBVAssetsGridViewCellReuseIdentifier = @"kTBVAssetsGridV
     [self.toolBar bindViewModel:self.viewModel.toolBarViewModel];
     
     [[[[[NSNotificationCenter defaultCenter]
-        rac_addObserverForName:TBVAssetsPickerAssetsDidChangeNotification
+        rac_addObserverForName:TBVAssetsAssetsDidChangeNotification
         object:nil]
         takeUntil:self.rac_willDeallocSignal]
         distinctUntilChanged]

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "TBVAssetsPickerTypes.h"
+#import "TBVAssetsManagerTypes.h"
 
 @class TBVCollection;
 @class TBVAssetsPickerManager;
@@ -16,7 +17,7 @@
 @interface TBVAssetsCollectionItemViewModel : NSObject
 - (instancetype)initWithCollection:(TBVCollection *)collection
                             picker:(__weak TBVAssetsPickerManager *)picker
-                         mediaType:(TBVAssetsPickerMediaType)mediaType;
+                         mediaType:(TBVAssetsMediaType)mediaType;
 @property (strong, nonatomic) TBVCollection *collection;
 @property (strong, nonatomic, readonly) RACSignal *posterImageSignal;
 @property (strong, nonatomic, readonly) NSString *title;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TBVAssetsViewModel.h"
+#import "TBVAssetsManagerTypes.h"
 
 @class TBVCollection;
 @class TBVAssetsPickerManager;
@@ -21,5 +22,5 @@
 @property (strong, nonatomic, readonly) NSString *cancelTitle;
 - (instancetype)initWithCollection:(TBVCollection *)collection
                             picker:(__weak TBVAssetsPickerManager *)picker
-                         mediaType:(TBVAssetsPickerMediaType)mediaType;
+                         mediaType:(TBVAssetsMediaType)mediaType;
 @end

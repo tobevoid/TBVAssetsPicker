@@ -59,7 +59,7 @@ static NSString *const kTBVAssetsCollectionViewCellReuseIdentifier = @"kTBVAsset
         }];
     
     [[[[[NSNotificationCenter defaultCenter]
-        rac_addObserverForName:TBVAssetsPickerAssetsDidChangeNotification
+        rac_addObserverForName:TBVAssetsAssetsDidChangeNotification
         object:nil]
         takeUntil:self.rac_willDeallocSignal]
         distinctUntilChanged]

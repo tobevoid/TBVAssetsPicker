@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[[[NSNotificationCenter defaultCenter]
-        rac_addObserverForName:TBVAssetsPickerAssetsDidChangeNotification object:nil]
+        rac_addObserverForName:TBVAssetsAssetsDidChangeNotification object:nil]
         takeUntil:self.rac_willDeallocSignal]
         subscribeNext:^(id x) {
             TBVLogInfo(@"assets did change: %@", x);
@@ -42,7 +42,7 @@
     /* 如果应用在后台时，更改了权限，当切回前台后，App会重新启动 */
 //    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIApplicationWillEnterForegroundNotification object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
 //        @strongify(self)
-//        TBVLogInfo(@"authorization did change to: %@", BQAuthorizationStatusStringsMap[@([self.pickerManager authorizationStatus])]);
+//        TBVLogInfo(@"authorization did change to: %@", TBVAssetsAuthorizationStatusStringsMap[@([self.pickerManager authorizationStatus])]);
 //        
 //    }];
     

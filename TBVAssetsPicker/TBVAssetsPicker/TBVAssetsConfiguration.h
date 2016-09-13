@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TBVAssetsPickerTypes.h"
+#import "TBVAssetsManagerTypes.h"
 
 @class TBVAsset;
 @interface TBVAssetsConfiguration : NSObject
@@ -15,6 +15,6 @@
 @property (nonatomic, strong) NSArray <TBVAsset *> *selectedAssets;
 @property (assign, nonatomic) NSInteger maxSelectedCount;
 @property (assign, nonatomic) BOOL showsEmptyAlbums;
-@property (assign, nonatomic) TBVAssetsPickerMediaType mediaType;
+@property (assign, nonatomic) TBVAssetsMediaType mediaType;
 @property (assign, nonatomic) BOOL shouldScrollToBottom;
 @end
