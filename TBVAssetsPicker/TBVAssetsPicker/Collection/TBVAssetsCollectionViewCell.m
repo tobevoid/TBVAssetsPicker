@@ -69,7 +69,8 @@
 #pragma mark public method
 - (void)bindViewModel:(TBVAssetsCollectionItemViewModel *)viewModel {
     self.viewModel = viewModel;
-    RAC(self, posterImageView.image) = [[viewModel.posterImageSignal
+    RAC(self, posterImageView.image) = [[[viewModel.posterImageSignal
+        throttle:0.05]
         takeUntil:self.rac_prepareForReuseSignal]
         map:^id(RACTuple *value) {
             return [value first];

@@ -575,6 +575,7 @@
 				TargetAttributes = {
 					D68529F01D84DD2700359C9E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8BU8NMY9TY;
 					};
 					D6852A091D84DD2700359C9E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -887,6 +888,7 @@
 			baseConfigurationReference = CFBC365BD102809CAFEE2702 /* Pods-TBVAssetsPicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8BU8NMY9TY;
 				INFOPLIST_FILE = TBVAssetsPicker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -900,6 +902,7 @@
 			baseConfigurationReference = 41B99AF05E51E70262C050E4 /* Pods-TBVAssetsPicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8BU8NMY9TY;
 				INFOPLIST_FILE = TBVAssetsPicker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

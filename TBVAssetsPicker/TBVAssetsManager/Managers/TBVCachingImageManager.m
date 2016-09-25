@@ -169,18 +169,21 @@
         fetchOptions.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate"
                                                                        ascending:YES]];
         PHAssetCollection *realCollection = (PHAssetCollection *)collection.collection;
-        /* fetchKeyAssetsInAssetCollection 获取至多三张 */
-        PHFetchResult *result = [PHAsset fetchKeyAssetsInAssetCollection:realCollection
-                                                                 options:fetchOptions];
-        if (!result.count) {
-            [subscriber sendNext:[RACSignal empty]];
-            [subscriber sendCompleted];
-            return nil;
-        }
         
-        TBVAsset *posterAsset = [TBVAsset assetWithOriginAsset:result.firstObject];
-        [subscriber sendNext:[self requestPosterImageForAsset:posterAsset]];
-        [subscriber sendCompleted];
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            /* fetchKeyAssetsInAssetCollection 获取至多三张 */
+            PHFetchResult *result = [PHAsset fetchKeyAssetsInAssetCollection:realCollection
+                                                      options:fetchOptions];
+            
+            if (!result.count) {
+                [subscriber sendNext:[RACSignal empty]];
+                [subscriber sendCompleted];
+            } else {
+                TBVAsset *posterAsset = [TBVAsset assetWithOriginAsset:result.firstObject];
+                [subscriber sendNext:[self requestPosterImageForAsset:posterAsset]];
+                [subscriber sendCompleted];
+            }
+        });
         return nil;
     }] switchToLatest];
 }

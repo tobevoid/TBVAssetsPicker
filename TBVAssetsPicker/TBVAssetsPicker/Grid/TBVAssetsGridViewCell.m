@@ -74,7 +74,8 @@
 - (void)bindViewModel:(TBVAssetsGridItemViewModel *)viewModel {
     self.viewModel = viewModel;
     
-    RAC(self, contentImageView.image) = [[viewModel.contentImageSignal
+    RAC(self, contentImageView.image) = [[[viewModel.contentImageSignal
+        throttle:0.05]
         takeUntil:self.rac_prepareForReuseSignal]
         map:^id(RACTuple *value) {
             return [value first];
