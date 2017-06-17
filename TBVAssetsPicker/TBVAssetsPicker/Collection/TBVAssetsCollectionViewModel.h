@@ -5,7 +5,7 @@
 //  Created by tripleCC on 8/25/16.
 //  Copyright © 2016 tripleCC. All rights reserved.
 //
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 @class TBVAssetsConfiguration;
 @class TBVAssetsPickerManager;
 @class TBVAssetsPickerController;
