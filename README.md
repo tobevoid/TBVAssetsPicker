@@ -1,10 +1,12 @@
 # TBVAssetsPicker
     
-##简介
+## 简介
+
 兼容iOS7+-的相片选择器
 
 [详情博客](http://t.cn/RcXf2S8)
-##如何使用
+
+## 如何使用
 - 创建相册资源reformer，展示相册选择器
 
 ```objc
@@ -63,6 +65,6 @@ viewController.delegate = self;
 ```
 
 
-##依赖
+## 依赖
 - Masonry
 - ReactiveCocoa
