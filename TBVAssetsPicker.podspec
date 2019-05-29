@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   }
 
   s.requires_arc = true
-
-  
+  s.dependency 'Masonry'
+  s.dependency 'ReactiveObjC', '~> 3.0'
 end

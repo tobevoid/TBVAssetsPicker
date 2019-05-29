@@ -1,29 +1,41 @@
 PODS:
-  - CocoaLumberjack (3.2.0):
-    - CocoaLumberjack/Default (= 3.2.0)
-    - CocoaLumberjack/Extensions (= 3.2.0)
-  - CocoaLumberjack/Default (3.2.0)
-  - CocoaLumberjack/Extensions (3.2.0):
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
     - CocoaLumberjack/Default
   - Masonry (1.0.2)
-  - ReactiveObjC (3.0.0)
-  - TBVAssetsManager (1.0.0):
+  - ReactiveObjC (3.1.1)
+  - TBVAssetsPicker (0.1.0):
+    - Masonry
     - ReactiveObjC (~> 3.0)
   - TBVLogger (1.0.0):
     - CocoaLumberjack (~> 3.0)
 
 DEPENDENCIES:
   - Masonry (~> 1.0.0)
-  - TBVAssetsManager
+  - TBVAssetsPicker (from `../TBVAssetsPicker`)
   - TBVLogger
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
+    - Masonry
+    - ReactiveObjC
+    - TBVLogger
+
+EXTERNAL SOURCES:
+  TBVAssetsPicker:
+    :path: "../TBVAssetsPicker"
+
 SPEC CHECKSUMS:
-  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
-  TBVAssetsManager: 8ad0950f789518980d9c632ea2da315c74de8faf
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  TBVAssetsPicker: c9a59a9bd939aa8e8b6941b814e1d86bf7729009
   TBVLogger: 95532524d05c5353def79d07d21ffe20fd51e99f
 
-PODFILE CHECKSUM: 214bb5343f671b101a77bf34e92367fd0866babe
+PODFILE CHECKSUM: 9ac26f70aabc304c35b1243d04028249de749f11
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.6.1

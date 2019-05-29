@@ -44,6 +44,19 @@
 		D6852AAB1D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A801D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m */; };
 		D6852AAC1D84DD7B00359C9E /* TBVAssetsSendToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A821D84DD7B00359C9E /* TBVAssetsSendToolBar.m */; };
 		D6852AAD1D84DD7B00359C9E /* TBVAssetsToolBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6852A841D84DD7B00359C9E /* TBVAssetsToolBarViewModel.m */; };
+		D6FBB5A5229E2E39006AF87F /* TBVCachingImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB58B229E2E39006AF87F /* TBVCachingImageManager.m */; };
+		D6FBB5A6229E2E39006AF87F /* TBVAssetsPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB58C229E2E39006AF87F /* TBVAssetsPickerManager.m */; };
+		D6FBB5A7229E2E39006AF87F /* TBVAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB58D229E2E39006AF87F /* TBVAssetsLibrary.m */; };
+		D6FBB5A8229E2E39006AF87F /* TBVAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB590229E2E39006AF87F /* TBVAsset.m */; };
+		D6FBB5A9229E2E39006AF87F /* TBVCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB593229E2E39006AF87F /* TBVCollection.m */; };
+		D6FBB5AA229E2E39006AF87F /* TBVAssetsReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB596229E2E39006AF87F /* TBVAssetsReformer.m */; };
+		D6FBB5AB229E2E39006AF87F /* TBVAssetsManagerTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB597229E2E39006AF87F /* TBVAssetsManagerTypes.m */; };
+		D6FBB5AC229E2E39006AF87F /* PHAssetCollection+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB59D229E2E39006AF87F /* PHAssetCollection+TBVAssetsManager.m */; };
+		D6FBB5AD229E2E39006AF87F /* PHFetchOptions+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB59E229E2E39006AF87F /* PHFetchOptions+TBVAssetsManager.m */; };
+		D6FBB5AE229E2E39006AF87F /* TBVAssetsPickerManager+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB59F229E2E39006AF87F /* TBVAssetsPickerManager+Authorization.m */; };
+		D6FBB5AF229E2E39006AF87F /* ALAssetsFilter+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB5A0229E2E39006AF87F /* ALAssetsFilter+TBVAssetsManager.m */; };
+		D6FBB5B0229E2E39006AF87F /* ALAssetsLibrary+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB5A1229E2E39006AF87F /* ALAssetsLibrary+TBVAssetsManager.m */; };
+		D6FBB5B1229E2E39006AF87F /* PHPhotoLibrary+TBVAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBB5A2229E2E39006AF87F /* PHPhotoLibrary+TBVAssetsManager.m */; };
 		F523B4852A5124109AF5905A /* libPods-TBVAssetsPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC3D66F0B099F6D7410A72 /* libPods-TBVAssetsPicker.a */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +151,34 @@
 		D6852A821D84DD7B00359C9E /* TBVAssetsSendToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsSendToolBar.m; sourceTree = "<group>"; };
 		D6852A831D84DD7B00359C9E /* TBVAssetsToolBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsToolBarViewModel.h; sourceTree = "<group>"; };
 		D6852A841D84DD7B00359C9E /* TBVAssetsToolBarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsToolBarViewModel.m; sourceTree = "<group>"; };
+		D6FBB585229E2E39006AF87F /* TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsManager.h; sourceTree = "<group>"; };
+		D6FBB586229E2E39006AF87F /* TBVAssetsManagerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsManagerTypes.h; sourceTree = "<group>"; };
+		D6FBB588229E2E39006AF87F /* TBVAssetsManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsManagerProtocol.h; sourceTree = "<group>"; };
+		D6FBB589229E2E39006AF87F /* TBVAssetsPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsPickerManager.h; sourceTree = "<group>"; };
+		D6FBB58A229E2E39006AF87F /* TBVAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsLibrary.h; sourceTree = "<group>"; };
+		D6FBB58B229E2E39006AF87F /* TBVCachingImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCachingImageManager.m; sourceTree = "<group>"; };
+		D6FBB58C229E2E39006AF87F /* TBVAssetsPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsPickerManager.m; sourceTree = "<group>"; };
+		D6FBB58D229E2E39006AF87F /* TBVAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsLibrary.m; sourceTree = "<group>"; };
+		D6FBB58E229E2E39006AF87F /* TBVCachingImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCachingImageManager.h; sourceTree = "<group>"; };
+		D6FBB590229E2E39006AF87F /* TBVAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAsset.m; sourceTree = "<group>"; };
+		D6FBB591229E2E39006AF87F /* TBVCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVCollection.h; sourceTree = "<group>"; };
+		D6FBB592229E2E39006AF87F /* TBVAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAsset.h; sourceTree = "<group>"; };
+		D6FBB593229E2E39006AF87F /* TBVCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVCollection.m; sourceTree = "<group>"; };
+		D6FBB595229E2E39006AF87F /* TBVAssetsReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVAssetsReformer.h; sourceTree = "<group>"; };
+		D6FBB596229E2E39006AF87F /* TBVAssetsReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsReformer.m; sourceTree = "<group>"; };
+		D6FBB597229E2E39006AF87F /* TBVAssetsManagerTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVAssetsManagerTypes.m; sourceTree = "<group>"; };
+		D6FBB599229E2E39006AF87F /* PHPhotoLibrary+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHPhotoLibrary+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D6FBB59A229E2E39006AF87F /* ALAssetsLibrary+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D6FBB59B229E2E39006AF87F /* ALAssetsFilter+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsFilter+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D6FBB59C229E2E39006AF87F /* TBVAssetsPickerManager+Authorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBVAssetsPickerManager+Authorization.h"; sourceTree = "<group>"; };
+		D6FBB59D229E2E39006AF87F /* PHAssetCollection+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAssetCollection+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D6FBB59E229E2E39006AF87F /* PHFetchOptions+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHFetchOptions+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D6FBB59F229E2E39006AF87F /* TBVAssetsPickerManager+Authorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBVAssetsPickerManager+Authorization.m"; sourceTree = "<group>"; };
+		D6FBB5A0229E2E39006AF87F /* ALAssetsFilter+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsFilter+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D6FBB5A1229E2E39006AF87F /* ALAssetsLibrary+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D6FBB5A2229E2E39006AF87F /* PHPhotoLibrary+TBVAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHPhotoLibrary+TBVAssetsManager.m"; sourceTree = "<group>"; };
+		D6FBB5A3229E2E39006AF87F /* PHAssetCollection+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAssetCollection+TBVAssetsManager.h"; sourceTree = "<group>"; };
+		D6FBB5A4229E2E39006AF87F /* PHFetchOptions+TBVAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHFetchOptions+TBVAssetsManager.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +284,7 @@
 		D6852A271D84DD7B00359C9E /* TBVAssetsPicker */ = {
 			isa = PBXGroup;
 			children = (
+				D6FBB584229E2E39006AF87F /* AssetsManager */,
 				D6852A281D84DD7B00359C9E /* Base */,
 				D6852A7E1D84DD7B00359C9E /* ToolBar */,
 				D6852A2F1D84DD7B00359C9E /* Browser */,
@@ -365,6 +407,73 @@
 			path = ToolBar;
 			sourceTree = "<group>";
 		};
+		D6FBB584229E2E39006AF87F /* AssetsManager */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBB585229E2E39006AF87F /* TBVAssetsManager.h */,
+				D6FBB586229E2E39006AF87F /* TBVAssetsManagerTypes.h */,
+				D6FBB587229E2E39006AF87F /* Managers */,
+				D6FBB58F229E2E39006AF87F /* Models */,
+				D6FBB594229E2E39006AF87F /* Refomer */,
+				D6FBB597229E2E39006AF87F /* TBVAssetsManagerTypes.m */,
+				D6FBB598229E2E39006AF87F /* Categories */,
+			);
+			path = AssetsManager;
+			sourceTree = "<group>";
+		};
+		D6FBB587229E2E39006AF87F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBB588229E2E39006AF87F /* TBVAssetsManagerProtocol.h */,
+				D6FBB589229E2E39006AF87F /* TBVAssetsPickerManager.h */,
+				D6FBB58A229E2E39006AF87F /* TBVAssetsLibrary.h */,
+				D6FBB58B229E2E39006AF87F /* TBVCachingImageManager.m */,
+				D6FBB58C229E2E39006AF87F /* TBVAssetsPickerManager.m */,
+				D6FBB58D229E2E39006AF87F /* TBVAssetsLibrary.m */,
+				D6FBB58E229E2E39006AF87F /* TBVCachingImageManager.h */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D6FBB58F229E2E39006AF87F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBB590229E2E39006AF87F /* TBVAsset.m */,
+				D6FBB591229E2E39006AF87F /* TBVCollection.h */,
+				D6FBB592229E2E39006AF87F /* TBVAsset.h */,
+				D6FBB593229E2E39006AF87F /* TBVCollection.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6FBB594229E2E39006AF87F /* Refomer */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBB595229E2E39006AF87F /* TBVAssetsReformer.h */,
+				D6FBB596229E2E39006AF87F /* TBVAssetsReformer.m */,
+			);
+			path = Refomer;
+			sourceTree = "<group>";
+		};
+		D6FBB598229E2E39006AF87F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBB599229E2E39006AF87F /* PHPhotoLibrary+TBVAssetsManager.h */,
+				D6FBB59A229E2E39006AF87F /* ALAssetsLibrary+TBVAssetsManager.h */,
+				D6FBB59B229E2E39006AF87F /* ALAssetsFilter+TBVAssetsManager.h */,
+				D6FBB59C229E2E39006AF87F /* TBVAssetsPickerManager+Authorization.h */,
+				D6FBB59D229E2E39006AF87F /* PHAssetCollection+TBVAssetsManager.m */,
+				D6FBB59E229E2E39006AF87F /* PHFetchOptions+TBVAssetsManager.m */,
+				D6FBB59F229E2E39006AF87F /* TBVAssetsPickerManager+Authorization.m */,
+				D6FBB5A0229E2E39006AF87F /* ALAssetsFilter+TBVAssetsManager.m */,
+				D6FBB5A1229E2E39006AF87F /* ALAssetsLibrary+TBVAssetsManager.m */,
+				D6FBB5A2229E2E39006AF87F /* PHPhotoLibrary+TBVAssetsManager.m */,
+				D6FBB5A3229E2E39006AF87F /* PHAssetCollection+TBVAssetsManager.h */,
+				D6FBB5A4229E2E39006AF87F /* PHFetchOptions+TBVAssetsManager.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		DAD084B1B874B584F960AB17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,8 +493,6 @@
 				D68529ED1D84DD2700359C9E /* Sources */,
 				D68529EE1D84DD2700359C9E /* Frameworks */,
 				D68529EF1D84DD2700359C9E /* Resources */,
-				072FA28488AFA8C09B3A22F7 /* [CP] Embed Pods Frameworks */,
-				6C44A7FB13EA4B669BA59086 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -460,6 +567,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -503,49 +611,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		072FA28488AFA8C09B3A22F7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBVAssetsPicker/Pods-TBVAssetsPicker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C44A7FB13EA4B669BA59086 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBVAssetsPicker/Pods-TBVAssetsPicker-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BCF3DA71A138EFADB4377F18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TBVAssetsPicker-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -556,24 +637,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6852AAC1D84DD7B00359C9E /* TBVAssetsSendToolBar.m in Sources */,
+				D6FBB5B0229E2E39006AF87F /* ALAssetsLibrary+TBVAssetsManager.m in Sources */,
+				D6FBB5A9229E2E39006AF87F /* TBVCollection.m in Sources */,
 				D6852AA21D84DD7B00359C9E /* TBVAssetsGridViewModel.m in Sources */,
 				D6852AA31D84DD7B00359C9E /* TBVAssetsPickerViewModelHelper.m in Sources */,
 				D6852A941D84DD7B00359C9E /* TBVAssetsPickerController+PickerManager.m in Sources */,
+				D6FBB5AE229E2E39006AF87F /* TBVAssetsPickerManager+Authorization.m in Sources */,
 				D6852A9A1D84DD7B00359C9E /* TBVAssetsCollectionViewCell.m in Sources */,
 				D6852A891D84DD7B00359C9E /* TBVAssetsBrowserItemViewModel.m in Sources */,
+				D6FBB5AA229E2E39006AF87F /* TBVAssetsReformer.m in Sources */,
 				D646A1B91D8792BE00CB42BB /* TBVAssetsConfiguration.m in Sources */,
 				D68529FC1D84DD2700359C9E /* ViewController.m in Sources */,
+				D6FBB5A5229E2E39006AF87F /* TBVCachingImageManager.m in Sources */,
 				D6852AAA1D84DD7B00359C9E /* TBVAssetsPickerTypes.m in Sources */,
 				D6852A9D1D84DD7B00359C9E /* TBVAssetsPickerAccessDeniedViewController.m in Sources */,
+				D6FBB5AB229E2E39006AF87F /* TBVAssetsManagerTypes.m in Sources */,
+				D6FBB5A6229E2E39006AF87F /* TBVAssetsPickerManager.m in Sources */,
+				D6FBB5B1229E2E39006AF87F /* PHPhotoLibrary+TBVAssetsManager.m in Sources */,
 				D6852A981D84DD7B00359C9E /* UIViewController+TBVAssetsPicker.m in Sources */,
 				D6852A8A1D84DD7B00359C9E /* TBVAssetsBrowserViewCell.m in Sources */,
 				D6852A9E1D84DD7B00359C9E /* TBVAssetsGridFlowLayout.m in Sources */,
+				D6FBB5A8229E2E39006AF87F /* TBVAsset.m in Sources */,
 				D6852A851D84DD7B00359C9E /* TBVAssetsItemViewModel.m in Sources */,
 				D6852A9C1D84DD7B00359C9E /* TBVAssetsCollectionViewModel.m in Sources */,
 				D6852AAB1D84DD7B00359C9E /* TBVAssetsFileSizeToolBar.m in Sources */,
+				D6FBB5A7229E2E39006AF87F /* TBVAssetsLibrary.m in Sources */,
 				D6852AAD1D84DD7B00359C9E /* TBVAssetsToolBarViewModel.m in Sources */,
+				D6FBB5AD229E2E39006AF87F /* PHFetchOptions+TBVAssetsManager.m in Sources */,
 				D6852AA01D84DD7B00359C9E /* TBVAssetsGridViewCell.m in Sources */,
 				D6852A9B1D84DD7B00359C9E /* TBVAssetsCollectionViewController.m in Sources */,
+				D6FBB5AC229E2E39006AF87F /* PHAssetCollection+TBVAssetsManager.m in Sources */,
 				D6852A8C1D84DD7B00359C9E /* TBVAssetsBrowserViewModel.m in Sources */,
 				D68529F91D84DD2700359C9E /* AppDelegate.m in Sources */,
 				D6852A9F1D84DD7B00359C9E /* TBVAssetsGridItemViewModel.m in Sources */,
@@ -581,6 +674,7 @@
 				D6852A881D84DD7B00359C9E /* TBVAssetsBrowserFlowLayout.m in Sources */,
 				D6852A871D84DD7B00359C9E /* TBVAssetsViewModel.m in Sources */,
 				D6852AA11D84DD7B00359C9E /* TBVAssetsGridViewController.m in Sources */,
+				D6FBB5AF229E2E39006AF87F /* ALAssetsFilter+TBVAssetsManager.m in Sources */,
 				D6852A8B1D84DD7B00359C9E /* TBVAssetsBrowserViewController.m in Sources */,
 				D68529F61D84DD2700359C9E /* main.m in Sources */,
 				D6852A991D84DD7B00359C9E /* TBVAssetsCollectionItemViewModel.m in Sources */,
