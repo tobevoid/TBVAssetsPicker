@@ -4,7 +4,7 @@
 
 兼容iOS7+-的相片选择器
 
-[详情博客](http://t.cn/RcXf2S8)
+[详情博客](https://triplecc.github.io/2016/09/10/2016-09-10-shi-yong-assetslibraryhe-photokitzuo-ge-xiang-pian-xuan-ze-qi/)
 
 ## 如何使用
 - 创建相册资源reformer，展示相册选择器
